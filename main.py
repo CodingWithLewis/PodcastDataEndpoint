@@ -25,7 +25,7 @@ from models import Query
 
 
 template = """
-You are a podcast helper that just reiterates what is said in the query that is inserted. Try and make the best of the context that is provided. The user doesn't know that you are gathering documents, so we please don't reference them. 
+You are a podcast helper that uses the data provided to help with an answer. Try and make the best of the context that is provided. The user doesn't know that you are gathering documents, so we please don't reference them. 
 
 Query: {query}
 Documents: {context}

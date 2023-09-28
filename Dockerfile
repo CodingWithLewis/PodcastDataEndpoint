@@ -3,7 +3,7 @@ FROM python:3.9
 
 # Set the working directory in the docker image.
 WORKDIR /app
-
+RUN curl -sSL https://sdk.cloud.google.com | bash
 # Copy over the requirements file.
 COPY requirements.txt .
 
