@@ -1,0 +1,933 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.901
+How did three software engineers alone
+
+00:00:01.901 --> 00:00:05.572
+Power One of the fastest rising
+apps of all time in an area
+
+00:00:05.572 --> 00:00:09.843
+where billions flood startups
+to hire armies of software engineers.
+
+00:00:09.909 --> 00:00:12.245
+had it? Only three achieve
+this incredible feat?
+
+00:00:12.245 --> 00:00:15.715
+In today's video, we'll talk about
+how Instagram was able to scale
+
+00:00:15.715 --> 00:00:19.819
+to 14 million users
+with only three software engineers.
+
+00:00:19.919 --> 00:00:20.887
+Welcome back to the channel.
+
+00:00:20.887 --> 00:00:22.655
+If you're new here, then my name is Lewis
+
+00:00:22.655 --> 00:00:26.693
+and I'm on a mission to inspire developers
+and tech enthusiasts.
+
+00:00:26.793 --> 00:00:30.597
+After raising $500,000
+to develop an app called Bourbon.
+
+00:00:30.597 --> 00:00:33.967
+Instagram decided that their app
+was to similar to Foursquare
+
+00:00:34.100 --> 00:00:37.737
+and decided to reinvent itself
+with a focus on photo sharing.
+
+00:00:37.804 --> 00:00:41.174
+So they stripped away
+a ton of its original features.
+
+00:00:41.274 --> 00:00:45.812
+Eight weeks later, they gave it to friends
+to beta test and fix any bugs after.
+
+00:00:45.845 --> 00:00:50.350
+It was almost time to launch Instagram
+was released to the iOS App Store on
+
+00:00:50.350 --> 00:00:56.790
+October six, 2010, and only within hours
+the app reached over 25,000 users,
+
+00:00:56.856 --> 00:01:01.661
+then 100,000 after the first week
+and then over 1,000,003 months later.
+
+00:01:01.928 --> 00:01:04.130
+The timing behind Instagram was perfect.
+
+00:01:04.130 --> 00:01:07.734
+It was when the iPhone four
+was just released to the public,
+
+00:01:07.801 --> 00:01:09.269
+and the iPhone four had a camera
+
+00:01:09.269 --> 00:01:12.272
+that was showing the power behind
+a cell phone camera.
+
+00:01:12.338 --> 00:01:14.707
+The explosion in growth was incredible.
+
+00:01:14.707 --> 00:01:19.012
+Growing to 1 million users and months
+and it's a good problem to have.
+
+00:01:19.012 --> 00:01:23.750
+But that $500,000 was slowly
+being eaten up.
+
+00:01:23.850 --> 00:01:28.755
+So another $25 million was raised
+by the founders to help expand their team.
+
+00:01:28.822 --> 00:01:32.892
+world is looking at Instagram
+and to address the rapidly growing users.
+
+00:01:32.892 --> 00:01:36.496
+They hired more people,
+but not a lot of people.
+
+00:01:36.596 --> 00:01:39.866
+A small group of software engineers
+were hired to help with the development,
+
+00:01:39.866 --> 00:01:42.702
+but their first job
+put out the constant fires.
+
+00:01:42.702 --> 00:01:46.973
+So with three engineers tasked to scale
+this application to 14 million users
+
+00:01:46.973 --> 00:01:51.077
+effectively, they needed to put down
+some important principles.
+
+00:01:51.177 --> 00:01:53.680
+Keep it very simple.
+Don't reinvent the wheel.
+
+00:01:53.680 --> 00:01:55.949
+Go with proven and solid technology.
+
+00:01:55.949 --> 00:02:05.725
+And after months and months of work,
+this is what they put together.
+
+00:02:05.825 --> 00:02:06.693
+Developers are
+
+00:02:06.693 --> 00:02:10.563
+always in critical danger if
+vulnerabilities in their app are missed.
+
+00:02:10.563 --> 00:02:12.332
+And thanks again to our sponsor Sneak.
+
+00:02:12.332 --> 00:02:16.603
+Keeping your source code
+secure and up to date is extremely easy.
+
+00:02:16.836 --> 00:02:20.073
+Eyes like GitHub copilot and chatty
+beta are helping programmers
+
+00:02:20.073 --> 00:02:24.410
+code a lot faster,
+but over 53% of programmers say that A.I.
+
+00:02:24.410 --> 00:02:26.713
+has introduced
+vulnerabilities into their code.
+
+00:02:26.713 --> 00:02:28.748
+So how do we prevent this from happening?
+
+00:02:28.748 --> 00:02:31.217
+Thanks to sneak code
+that is powered by deep code A.I..
+
+00:02:31.217 --> 00:02:34.254
+You can detect vulnerabilities
+in real time through an integration
+
+00:02:34.254 --> 00:02:37.590
+of your favorite code editor and fix
+right after you paste in the code.
+
+00:02:37.624 --> 00:02:41.528
+This includes the packages that you
+install as well as sneak intelligently,
+
+00:02:41.528 --> 00:02:45.832
+analyzes your configuration files,
+dependencies, and your Docker containers.
+
+00:02:45.865 --> 00:02:49.302
+So when I generate some code
+to write a user to the database,
+
+00:02:49.302 --> 00:02:52.272
+Nic is able to tell me right away
+that something isn't adding up.
+
+00:02:52.272 --> 00:02:53.973
+This way you can get the benefits of A.I.
+
+00:02:53.973 --> 00:02:55.275
+generating code for you while
+
+00:02:55.275 --> 00:02:57.911
+also keeping your code up to date
+with security standards
+
+00:02:57.911 --> 00:02:59.712
+with sneaks generous free forever plan.
+
+00:02:59.712 --> 00:03:03.349
+You can feel more confident writing code
+that's written by you or your A.I.
+
+00:03:03.349 --> 00:03:03.750
+buddy.
+
+00:03:03.750 --> 00:03:06.352
+I've been using sneak personally
+for a very long time,
+
+00:03:06.352 --> 00:03:10.256
+and it's an absolute privilege for them
+to be a long term sponsor of this channel.
+
+00:03:10.290 --> 00:03:13.393
+Sign up for Sneak for absolutely free
+with the link in the description
+
+00:03:13.393 --> 00:03:18.531
+below and start actually
+having confidence in your deployments.
+
+00:03:18.631 --> 00:03:21.634
+Load balancer.
+
+00:03:21.868 --> 00:03:24.137
+now, as soon as you open the application,
+
+00:03:24.137 --> 00:03:28.341
+Instagram pings their servers in order
+to bring you relevant information.
+
+00:03:28.341 --> 00:03:32.579
+But where does it know
+to go to get that relevant information?
+
+00:03:32.579 --> 00:03:34.847
+This is where load balancers come in.
+
+00:03:34.847 --> 00:03:38.818
+Instagram engineers use Amazon's
+elastic load balancer to do this.
+
+00:03:38.918 --> 00:03:42.355
+Load balancing is a common concept
+in computer infrastructure.
+
+00:03:42.355 --> 00:03:44.357
+If you had one server to handle
+all of this,
+
+00:03:44.357 --> 00:03:47.493
+you would have to upgrade
+to more powerful machines constantly.
+
+00:03:47.493 --> 00:03:49.395
+Instead, if you horizontally scale,
+
+00:03:49.395 --> 00:03:52.498
+it means you can take different sizes
+of computers and distribute
+
+00:03:52.498 --> 00:03:53.666
+the traffic accordingly.
+
+00:03:53.666 --> 00:03:56.736
+So the load balancer decides
+where the traffic goes.
+
+00:03:56.736 --> 00:03:57.570
+In this instance.
+
+00:03:57.570 --> 00:04:01.841
+The engineers use three engine
+X instances that can be swapped in and out
+
+00:04:01.841 --> 00:04:02.976
+at any point.
+
+00:04:02.976 --> 00:04:06.613
+the amount of traffic coming in at
+the spot is massive and these servers
+
+00:04:06.613 --> 00:04:12.885
+then had to decide what server
+to distribute it to those servers being
+
+00:04:12.986 --> 00:04:16.656
+the application server.
+
+00:04:16.756 --> 00:04:19.892
+Think about the main code
+that the Instagram backend sets on.
+
+00:04:19.892 --> 00:04:21.427
+It's on one of these servers.
+
+00:04:21.427 --> 00:04:24.163
+Oh yeah. So
+it's not just one of these servers.
+
+00:04:24.163 --> 00:04:30.837
+It's 25 of them.
+
+00:04:30.937 --> 00:04:34.307
+Each of these machines
+are designed to handle high CPU usage
+
+00:04:34.307 --> 00:04:37.910
+and on each of them have the Django
+framework installed on them.
+
+00:04:37.977 --> 00:04:41.914
+Django is an open source web framework
+that is built on top of Python
+
+00:04:41.914 --> 00:04:45.685
+that lets you migrate databases,
+set specific routes for your information
+
+00:04:45.685 --> 00:04:47.186
+and deal with authentication.
+
+00:04:47.186 --> 00:04:50.189
+Django is extremely popular
+in the Python community
+
+00:04:50.189 --> 00:04:53.293
+and so many big websites
+are still using it to this day.
+
+00:04:53.293 --> 00:04:57.230
+So once the load balancer directs
+the traffic to one of these 25 servers,
+
+00:04:57.230 --> 00:05:02.802
+that traffic hits what is called
+G unicorn gun, a corn dog unicorn.
+
+00:05:02.902 --> 00:05:04.904
+Does anyone actually know
+what the answer to this is?
+
+00:05:04.904 --> 00:05:08.408
+This is a W SGI server
+which acts like a bridge
+
+00:05:08.408 --> 00:05:11.678
+between the actual Python code
+and the load balancer.
+
+00:05:11.678 --> 00:05:12.578
+In this instance.
+
+00:05:12.578 --> 00:05:14.881
+But this presents another issue.
+
+00:05:14.881 --> 00:05:19.452
+How do we make sure that all 25 machines
+have the exact same code on them?
+
+00:05:19.452 --> 00:05:23.790
+And how do we make sure
+we can control all 25?
+
+00:05:23.890 --> 00:05:26.359
+The engineers use something called fabric
+
+00:05:26.359 --> 00:05:29.495
+that lets them execute
+the same command across all machines.
+
+00:05:29.595 --> 00:05:33.399
+These machines are stateless, meaning
+that it doesn't store any information
+
+00:05:33.399 --> 00:05:34.967
+on that machine specifically.
+
+00:05:34.967 --> 00:05:38.071
+So your request is treated
+the same amongst all machines.
+
+00:05:38.071 --> 00:05:47.180
+But if they're not being stored on the
+machine, then where are they being stored?
+
+00:05:47.280 --> 00:05:50.917
+Data storage.
+
+00:05:51.017 --> 00:05:51.984
+one of the most important.
+
+00:05:51.984 --> 00:05:57.056
+If not the most important part
+of any software company is its data.
+
+00:05:57.123 --> 00:06:00.927
+base data like user photo
+metadata tags and more.
+
+00:06:00.927 --> 00:06:03.363
+Live inside of a PostgreSQL database.
+
+00:06:03.363 --> 00:06:06.099
+But it can just be one database.
+
+00:06:06.099 --> 00:06:09.669
+It was 12 extra large
+memory databases, each
+
+00:06:09.669 --> 00:06:13.673
+with a replica helping it.
+
+00:06:13.773 --> 00:06:16.776
+But what database do we even use then?
+
+00:06:16.876 --> 00:06:19.479
+They needed a quick way
+to quickly match metadata
+
+00:06:19.479 --> 00:06:21.514
+with a correct database to store data.
+
+00:06:21.514 --> 00:06:25.618
+For this issue, they needed a system
+that could easily store and remove data
+
+00:06:25.618 --> 00:06:26.786
+at lightning speeds.
+
+00:06:26.786 --> 00:06:34.894
+So for this, they used Redis
+
+00:06:34.994 --> 00:06:36.763
+Redis as a data structure store
+
+00:06:36.763 --> 00:06:39.966
+that uses their memory
+to read and write extremely fast.
+
+00:06:39.966 --> 00:06:42.869
+Writing to a desk
+takes longer than writing to memory.
+
+00:06:42.869 --> 00:06:46.005
+And so for operations
+that require you to execute things
+
+00:06:46.005 --> 00:06:49.675
+like lightning fast,
+like a web server, it's extremely needed.
+
+00:06:49.675 --> 00:06:53.045
+The Reds cache was stored in the media
+ID that is with the user
+
+00:06:53.045 --> 00:06:56.215
+ID so that the database knew
+which database to go to.
+
+00:06:56.215 --> 00:06:59.218
+this, knocking off
+even more potential latency.
+
+00:06:59.285 --> 00:07:07.226
+But now it's on to the database.
+
+00:07:07.326 --> 00:07:08.227
+Here's an issue, though.
+
+00:07:08.227 --> 00:07:11.230
+Databases,
+especially PostgreSQL, has a really,
+
+00:07:11.264 --> 00:07:14.734
+really heavy architecture
+when it comes to handling connections.
+
+00:07:14.934 --> 00:07:18.738
+Every time a new connection starts,
+it creates a new process, performs
+
+00:07:18.738 --> 00:07:19.505
+the operation,
+
+00:07:19.505 --> 00:07:23.609
+and then closes this connection,
+which is great for long live connections.
+
+00:07:23.609 --> 00:07:27.280
+But what happens when your users
+are coming in
+
+00:07:27.280 --> 00:07:30.783
+at the billions
+and very quickly to solve this?
+
+00:07:30.817 --> 00:07:33.886
+Something goes in between the database
+and the server.
+
+00:07:33.886 --> 00:07:37.223
+A connection pooler rather than making
+a new connection on the spot.
+
+00:07:37.256 --> 00:07:40.593
+The pooler creates a set amount
+of existing connections.
+
+00:07:40.593 --> 00:07:44.530
+Once something connects the pool or gives
+the existing connection to the request
+
+00:07:44.564 --> 00:07:45.398
+coming in
+
+00:07:45.398 --> 00:07:48.801
+and puts it back when it's finished
+and when the database comes back
+
+00:07:48.801 --> 00:08:05.051
+with the data, it's then put into a cache
+powered by six instances of mem cached.
+
+00:08:05.151 --> 00:08:08.087
+Imagine going on Instagram
+and clicking the profile of someone
+
+00:08:08.087 --> 00:08:10.790
+making a call to a database over
+the same information
+
+00:08:10.790 --> 00:08:14.026
+is extremely inefficient
+and causes things to slow down.
+
+00:08:14.026 --> 00:08:17.230
+So instead we can store
+frequently made requests in a cache,
+
+00:08:17.230 --> 00:08:20.533
+and when someone requests it,
+we can take it to our extremely fast
+
+00:08:20.533 --> 00:08:23.903
+memory store and try to keep
+all this pressure off of the database
+
+00:08:23.936 --> 00:08:28.541
+is such a core and pivotal aspect
+to any computer infrastructure.
+
+00:08:28.541 --> 00:08:30.743
+So this is where we're storing tags.
+
+00:08:30.743 --> 00:08:33.746
+But like this is Instagram here.
+
+00:08:33.746 --> 00:08:40.353
+What about the images?
+
+00:08:40.453 --> 00:08:43.222
+Object Storage.
+
+00:08:43.222 --> 00:08:47.627
+One of the most convenient ways
+to store files services like Amazon S3 let
+
+00:08:47.627 --> 00:08:51.631
+you upload terabytes worth of objects
+in a file structure of your choosing.
+
+00:08:51.631 --> 00:08:54.734
+rather than just sending the object
+directly through the servers,
+
+00:08:54.734 --> 00:08:55.935
+it does something different.
+
+00:08:55.935 --> 00:08:59.338
+When the request hits
+the application servers, it goes to S3
+
+00:08:59.338 --> 00:09:02.475
+and generates a signed URL
+that is only temporary.
+
+00:09:02.475 --> 00:09:06.279
+It then sends this back to your phone
+so that the file can upload directly
+
+00:09:06.279 --> 00:09:08.714
+to the cloud servers
+instead of Instagram's.
+
+00:09:08.714 --> 00:09:12.852
+The metadata info and the
+your realm of where this image is located
+
+00:09:12.852 --> 00:09:14.954
+is then saved in the database.
+
+00:09:14.954 --> 00:09:18.257
+So once all the queries are made
+and the data is ready to be sent
+
+00:09:18.257 --> 00:09:19.292
+back to the user,
+
+00:09:19.292 --> 00:09:22.995
+we have to find a way to send it to them
+before we send it back to the user.
+
+00:09:22.995 --> 00:09:27.300
+We have to swap the URL from the object
+storage to something called a CD
+
+00:09:27.466 --> 00:09:32.238
+and a content delivery network
+is exactly what it sounds.
+
+00:09:32.338 --> 00:09:32.672
+there are.
+
+00:09:32.672 --> 00:09:33.673
+Servers all around
+
+00:09:33.673 --> 00:09:38.077
+the world are able to deliver files closer
+to your users, similar to our mem cache,
+
+00:09:38.077 --> 00:09:42.248
+when a user requests a brand new file
+from the CD and it takes a little longer
+
+00:09:42.248 --> 00:09:45.518
+to grab this file from the origin point
+on just the first time.
+
+00:09:45.518 --> 00:09:47.920
+this is then cached
+and this CD and edge point
+
+00:09:47.920 --> 00:09:51.624
+and can consistently be delivered
+to people in the closest area.
+
+00:09:51.624 --> 00:09:53.159
+So the object storage link
+
+00:09:53.159 --> 00:09:57.196
+is then translated over to the CD end link
+and then sent back to the user.
+
+00:09:57.196 --> 00:10:01.067
+This is when your feed starts
+to populate the data renders on the screen
+
+00:10:01.067 --> 00:10:05.137
+and then the photo starts
+A download to your device and all of that
+
+00:10:05.204 --> 00:10:11.010
+just for you to
+exit Instagram immediately.
+
+00:10:11.077 --> 00:10:12.111
+Wait.
+
+00:10:12.111 --> 00:10:15.748
+If my
+app was closed, how did this send to me?
+
+00:10:15.848 --> 00:10:19.652
+The Apple Push Notification Service,
+a service provided by Apple
+
+00:10:19.652 --> 00:10:23.556
+to let companies send payloads to them
+that will then be sent to the users.
+
+00:10:23.556 --> 00:10:27.259
+But like with over 90 likes happening
+per second,
+
+00:10:27.326 --> 00:10:36.035
+how do they do that scale?
+
+00:10:36.135 --> 00:10:37.003
+another server
+
+00:10:37.003 --> 00:10:41.073
+that has the open source software Pie
+API and as dedicated
+
+00:10:41.073 --> 00:10:45.111
+for the task of sending out
+push notifications as fast as possible.
+
+00:10:45.111 --> 00:10:47.079
+So as soon as a like happens,
+
+00:10:47.079 --> 00:10:50.916
+a trigger is made to make
+a push notification in using the user ID,
+
+00:10:51.017 --> 00:10:55.921
+but like how can we scale to 90 likes per
+second task cuz a common
+
+00:10:55.921 --> 00:11:00.426
+software infrastructure practice
+to set and forget large processes.
+
+00:11:00.493 --> 00:11:04.397
+And in this case the three engineers
+used Dearman to do this
+
+00:11:04.463 --> 00:11:08.034
+large task like handling photo uploads
+after has been uploaded
+
+00:11:08.267 --> 00:11:11.971
+sharing to Facebook or Twitter
+after you upload or even sending
+
+00:11:11.971 --> 00:11:14.240
+push notifications are put in a queue.
+
+00:11:14.240 --> 00:11:17.576
+Then over 200 workers
+would work at this queue, constantly
+
+00:11:17.710 --> 00:11:19.445
+filling tasks one by one.
+
+00:11:19.445 --> 00:11:22.114
+sharing to Facebook,
+could be 10 seconds after you upload
+
+00:11:22.114 --> 00:11:23.616
+and it doesn't really bother you.
+
+00:11:23.616 --> 00:11:27.586
+So being able to send certain
+jobs off to do later is a huge component.
+
+00:11:27.586 --> 00:11:30.823
+And what makes applications
+run as fast as possible.
+
+00:11:30.823 --> 00:11:36.128
+so when you have 100 instances happening
+at the same time doing different things,
+
+00:11:36.228 --> 00:11:40.399
+how do you even monitor this,
+especially if you're three engineers?
+
+00:11:40.533 --> 00:11:43.803
+Monitoring these systems is one of
+the most important things you can do.
+
+00:11:43.803 --> 00:11:45.004
+So the Instagram team
+
+00:11:45.004 --> 00:11:48.974
+use immune to see graphs across
+all of the things on their system.
+
+00:11:48.974 --> 00:11:52.178
+This also allowed them to set points
+in their graph to send alerts
+
+00:11:52.178 --> 00:11:53.412
+when things got too high.
+
+00:11:53.412 --> 00:11:55.715
+And as open source nature
+makes it really easy
+
+00:11:55.715 --> 00:11:58.984
+to add your own plugins
+to help with your unique situations
+
+00:11:59.085 --> 00:12:02.188
+like photos per second signups
+per minute, and more.
+
+00:12:02.188 --> 00:12:05.524
+and tools like Sentry,
+which lives inside of your applications,
+
+00:12:05.758 --> 00:12:09.895
+makes it easy for developers to be able to
+track bugs Sentry will send you
+
+00:12:09.895 --> 00:12:13.999
+the stack trace as well as the bug
+before the user even reports that.
+
+00:12:13.999 --> 00:12:17.236
+and at this point,
+this monitoring tools is probably
+
+00:12:17.236 --> 00:12:21.073
+where these three engineers would find out
+what they had to work on next.
+
+00:12:21.140 --> 00:12:23.476
+So when we look back
+at the core principles,
+
+00:12:23.476 --> 00:12:25.711
+we can see they kept it very simple.
+
+00:12:25.711 --> 00:12:26.545
+Yeah, I know.
+
+00:12:26.545 --> 00:12:30.683
+Doing all of this is probably not simple
+for one simple task.
+
+00:12:30.683 --> 00:12:34.620
+In theory, never once would you question
+the role of a specific area
+
+00:12:34.620 --> 00:12:35.621
+in the infrastructure.
+
+00:12:35.621 --> 00:12:38.791
+And because of that,
+I think they kept it very simple.
+
+00:12:38.791 --> 00:12:39.992
+Don't reinvent the wheel.
+
+00:12:39.992 --> 00:12:42.995
+something you see
+and big tech is software's like this
+
+00:12:42.995 --> 00:12:46.799
+as only geared towards their company
+to suit their specific needs.
+
+00:12:46.866 --> 00:12:50.136
+Of course this makes sense
+when you handle billions of users,
+
+00:12:50.136 --> 00:12:53.973
+the open source methods
+might not 100% accommodate to your needs.
+
+00:12:54.106 --> 00:12:57.576
+what I love is that all the software
+that they use, you can go on
+
+00:12:57.576 --> 00:13:01.080
+to GitHub and download right now
+so that you can take advantage of it.
+
+00:13:01.113 --> 00:13:04.984
+So in a way
+it's almost very inspiring as a developer
+
+00:13:05.117 --> 00:13:08.120
+with proven and solid technologies
+when you can software
+
+00:13:08.120 --> 00:13:11.123
+that Instagram used have all passed
+the test of time.
+
+00:13:11.157 --> 00:13:15.594
+even the proprietary software is like the
+AWB load balancers are still being used.
+
+00:13:15.594 --> 00:13:18.364
+Engine X Rattus, G Unicorn.
+
+00:13:18.364 --> 00:13:19.298
+anyone have the answer to that?
+
+00:13:19.298 --> 00:13:22.034
+By the way, Dearman
+and more are still being used.
+
+00:13:22.034 --> 00:13:26.372
+And even back then, it wasn't necessarily
+a risk to use those softwares either.
+
+00:13:26.472 --> 00:13:28.874
+what I love
+about seeing this infrastructure is that
+
+00:13:28.874 --> 00:13:33.145
+if you map out in the way that we did,
+you can almost see at what point
+
+00:13:33.145 --> 00:13:37.616
+they decided to implement
+what software and server, at what point.
+
+00:13:37.716 --> 00:13:41.187
+when you're a three person team,
+you just have to do what you have to do.
+
+00:13:41.320 --> 00:13:44.990
+This article was posted 12 years ago,
+so make sure you check it out in the link
+
+00:13:44.990 --> 00:13:46.125
+in the description below.
+
+00:13:46.125 --> 00:13:49.929
+you love to see deep dives of how your
+favorite software works behind the scenes,
+
+00:13:50.029 --> 00:13:51.030
+then make sure you check out
+
+00:13:51.030 --> 00:13:55.034
+my Discord video on how they scale
+to like trillions of messages.
+
+00:13:55.034 --> 00:13:55.634
+This insane.
+

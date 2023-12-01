@@ -1,0 +1,884 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.066 --> 00:00:02.302
+Rust will make you hate JavaScript.
+
+00:00:02.302 --> 00:00:04.070
+When I was learning Rust,
+I couldn't help but notice
+
+00:00:04.070 --> 00:00:07.140
+the same comment everywhere
+by former JavaScript developers.
+
+00:00:07.273 --> 00:00:09.609
+And this video, I'll walk you through
+five key concepts
+
+00:00:09.609 --> 00:00:13.146
+you need to understand as a JavaScript
+or TypeScript developer learning rust.
+
+00:00:13.279 --> 00:00:16.182
+If you stick around to the end,
+I'll give you four foolproof steps
+
+00:00:16.182 --> 00:00:17.117
+to start learning Rust.
+
+00:00:17.117 --> 00:00:20.153
+Today, Rust has been the favorite
+programing language for a record
+
+00:00:20.153 --> 00:00:24.024
+eight years in a row in the StackOverflow
+survey, and Rust is also infiltrating
+
+00:00:24.024 --> 00:00:25.225
+the JavaScript ecosystem.
+
+00:00:25.225 --> 00:00:28.661
+We've got Turbo
+PAC, RS, PAC, SWC and Lightning success.
+
+00:00:28.661 --> 00:00:30.630
+Even existing tooling is moving to rust.
+
+00:00:30.630 --> 00:00:33.900
+Both Veit and Parcel are transitioning
+critical pieces to rust
+
+00:00:34.100 --> 00:00:37.270
+and Tailwind has planned
+to move its default parser to rust.
+
+00:00:37.270 --> 00:00:38.671
+Now aren't you curious?
+
+00:00:38.671 --> 00:00:41.274
+Could you learn Rust
+as a JavaScript developer?
+
+00:00:41.274 --> 00:00:42.642
+It might be easier than you think.
+
+00:00:42.642 --> 00:00:45.445
+Let's cover these five high level
+concepts one by one.
+
+00:00:45.445 --> 00:00:49.082
+I wish I would have known before learning
+Rust will mostly avoid syntax for now,
+
+00:00:49.182 --> 00:00:51.317
+but I think you'll find that
+if you understand these concepts,
+
+00:00:51.317 --> 00:00:53.053
+this syntax will come much easier to you.
+
+00:00:53.053 --> 00:00:56.990
+The first key concept is
+that rust is a compiled language.
+
+00:00:57.090 --> 00:00:59.893
+In other words, there's
+no runtime that executes Rust code.
+
+00:00:59.893 --> 00:01:02.328
+If you're familiar with TypeScript,
+it's a similar process.
+
+00:01:02.328 --> 00:01:04.364
+Since the browser can't read TypeScript.
+
+00:01:04.364 --> 00:01:07.400
+You use BABBEL or some other tool
+to transport all your code
+
+00:01:07.500 --> 00:01:11.171
+to vanilla JavaScript Rust doesn't target
+your browser, however, but your system.
+
+00:01:11.171 --> 00:01:14.340
+So you'll need to build your code
+to compile it to a performant executable
+
+00:01:14.340 --> 00:01:19.212
+before running it. Memory Management.
+
+00:01:19.312 --> 00:01:22.148
+How Rust manages
+Memory is one of its distinct features.
+
+00:01:22.148 --> 00:01:26.019
+Most languages either handle memory
+for you like JavaScript garbage collector,
+
+00:01:26.219 --> 00:01:30.256
+or give you complete control
+over memory management like C or C++.
+
+00:01:30.290 --> 00:01:32.659
+These two memory choices are opposite
+tradeoffs.
+
+00:01:32.659 --> 00:01:35.261
+Garbage collected
+languages are often less error prone,
+
+00:01:35.261 --> 00:01:37.564
+as you don't typically have to worry
+about seg faults.
+
+00:01:37.564 --> 00:01:39.099
+Buffer overflows and the like.
+
+00:01:39.099 --> 00:01:43.503
+But you sacrifice your ability to control
+allocation and the allocation of memory.
+
+00:01:43.503 --> 00:01:46.439
+Rust follows
+a third option called the ownership model,
+
+00:01:46.439 --> 00:01:49.409
+which gives you control over memory,
+but puts up guardrails
+
+00:01:49.409 --> 00:01:52.312
+to help you avoid many common pitfalls
+in memory management.
+
+00:01:52.312 --> 00:01:56.416
+You still manage the memory, but Rust
+checks your choices against guiding rules.
+
+00:01:56.516 --> 00:01:57.717
+If you violate a rule.
+
+00:01:57.717 --> 00:01:59.252
+Rust won't compile your program.
+
+00:01:59.252 --> 00:02:02.021
+So what are these rules?
+There are two essential ones.
+
+00:02:02.021 --> 00:02:05.391
+First, each value in rust has a variable
+that's called its owner.
+
+00:02:05.391 --> 00:02:06.793
+It's responsible for the value.
+
+00:02:06.793 --> 00:02:08.061
+And very importantly,
+
+00:02:08.061 --> 00:02:11.798
+there can only be one holder
+or owner of each value at a time.
+
+00:02:11.865 --> 00:02:13.500
+Here I have a string, Chris.
+
+00:02:13.500 --> 00:02:15.368
+Currently the variable name is the owner.
+
+00:02:15.368 --> 00:02:17.971
+I can pass that value to my function
+print string,
+
+00:02:17.971 --> 00:02:20.306
+but at that point
+the function now owns the value.
+
+00:02:20.306 --> 00:02:21.941
+And that brings us to the second rule.
+
+00:02:21.941 --> 00:02:25.178
+When the owner goes out of scope,
+the value is dropped from memory.
+
+00:02:25.178 --> 00:02:28.248
+I can't then access the list again
+in the main function.
+
+00:02:28.248 --> 00:02:30.183
+So name owns the string,
+
+00:02:30.183 --> 00:02:33.186
+then it's passed to print string,
+which is now the new owner.
+
+00:02:33.386 --> 00:02:36.623
+And finally, once it's printed,
+the string is removed from memory.
+
+00:02:36.656 --> 00:02:39.159
+Since its owner is out of scope
+JavaScript,
+
+00:02:39.159 --> 00:02:42.162
+the value would live on in memory
+until the garbage collector clears it,
+
+00:02:42.162 --> 00:02:43.429
+which can be ambiguous.
+
+00:02:43.429 --> 00:02:45.031
+In rust, it's very clear
+
+00:02:45.031 --> 00:02:47.901
+when the owner moves out of scope,
+the memory is dislocated.
+
+00:02:47.901 --> 00:02:51.604
+These rules are the special sauce
+to memory management in rust.
+
+00:02:51.671 --> 00:02:52.772
+Now I know what you're thinking.
+
+00:02:52.772 --> 00:02:53.406
+Wait a second.
+
+00:02:53.406 --> 00:02:56.042
+How can I ever pass any values
+without changing their owners?
+
+00:02:56.042 --> 00:02:58.344
+That's
+where references and borrowing enters.
+
+00:02:58.344 --> 00:03:00.613
+While values cannot have multiple owners.
+
+00:03:00.613 --> 00:03:03.850
+Functions and other calls can borrow
+references to values
+
+00:03:03.950 --> 00:03:05.385
+which belong to other owners.
+
+00:03:05.385 --> 00:03:07.153
+Again, here rust is explicit.
+
+00:03:07.153 --> 00:03:09.389
+You add an ampersand
+to a referenced value.
+
+00:03:09.389 --> 00:03:10.790
+We're getting a little ahead of ourselves,
+
+00:03:10.790 --> 00:03:13.893
+but borrowing a referencing of value
+can happen in two different ways.
+
+00:03:14.093 --> 00:03:15.862
+And here I think an example would help.
+
+00:03:15.862 --> 00:03:19.465
+If I let you borrow my car, I'd expect you
+to return it in the same condition
+
+00:03:19.465 --> 00:03:21.034
+that would be immutable borrowing.
+
+00:03:21.034 --> 00:03:22.635
+You can borrow it,
+but you can't change it.
+
+00:03:22.635 --> 00:03:24.304
+If you were my mechanic borrowing my car,
+
+00:03:24.304 --> 00:03:26.072
+though
+I may say, Hey, if you find anything
+
+00:03:26.072 --> 00:03:28.174
+you want to improve
+while you have it, go for it.
+
+00:03:28.174 --> 00:03:29.609
+That would be a mutable reference.
+
+00:03:29.609 --> 00:03:32.145
+In other words, you can change it
+with either type of reference.
+
+00:03:32.145 --> 00:03:34.480
+Though I'm still the owner
+and you're only borrowing
+
+00:03:34.480 --> 00:03:36.783
+in this case names
+and a mutable reference.
+
+00:03:36.783 --> 00:03:40.520
+I let the function use the string
+but is not allowed to change it in any way
+
+00:03:40.753 --> 00:03:42.689
+since the owner retains the value.
+
+00:03:42.689 --> 00:03:47.193
+That also means I can pass a reference
+twice in a row as the owner is still name.
+
+00:03:47.260 --> 00:03:50.763
+This brings us to variables and mutability
+
+00:03:50.830 --> 00:03:51.497
+and rust.
+
+00:03:51.497 --> 00:03:53.733
+All variables are immutable by default.
+
+00:03:53.733 --> 00:03:55.301
+In other words, they cannot be changed.
+
+00:03:55.301 --> 00:03:58.471
+To mutate a variable
+you have to explicitly marked as mutable
+
+00:03:58.571 --> 00:03:59.706
+with a mute keyword.
+
+00:03:59.706 --> 00:04:03.910
+So for instance, if you wanted to pass a
+mutable reference to name, you'd add mute
+
+00:04:04.110 --> 00:04:08.181
+and now the references mutable meaning
+that print string can change the value
+
+00:04:08.214 --> 00:04:09.182
+while it's borrowing it.
+
+00:04:09.182 --> 00:04:11.851
+And since the variable name
+still owns the string,
+
+00:04:11.851 --> 00:04:15.388
+I can pass the mutable reference
+to print string a few times in a row.
+
+00:04:15.388 --> 00:04:18.391
+In practice,
+let by itself works like constant
+
+00:04:18.391 --> 00:04:22.095
+JavaScript while let mute works
+like let and JavaScript.
+
+00:04:22.195 --> 00:04:25.832
+Since rust is explicit, it's easy to tell
+whether or not something can be mutated.
+
+00:04:25.832 --> 00:04:28.401
+It's not dependent on the type,
+like if it's an object, it's
+
+00:04:28.401 --> 00:04:29.769
+if it has that mute keyword.
+
+00:04:29.769 --> 00:04:34.173
+So here count cannot be modified
+until I add the mute keyword.
+
+00:04:34.173 --> 00:04:37.477
+As a JavaScript developer,
+you may be a bit claustrophobic right now.
+
+00:04:37.710 --> 00:04:38.244
+Hang in there.
+
+00:04:38.244 --> 00:04:40.580
+We're used to changing around
+nearly any variable,
+
+00:04:40.580 --> 00:04:43.149
+but that flexibility introduces
+a lot of bugs.
+
+00:04:43.149 --> 00:04:45.752
+For example,
+if you pop the last item from an array,
+
+00:04:45.752 --> 00:04:49.022
+you've also mutated the array in place
+and you just have to know
+
+00:04:49.022 --> 00:04:51.291
+which methods mutate
+in which methods copy.
+
+00:04:51.291 --> 00:04:53.192
+Here we've mixed a specific value.
+
+00:04:53.192 --> 00:04:57.463
+The last item in the original array
+with a mutated value, the altered array
+
+00:04:57.463 --> 00:05:01.401
+Does last item mean the last item
+in the original array or the mutated one?
+
+00:05:01.434 --> 00:05:03.202
+You'll have to manually track down
+the reference
+
+00:05:03.202 --> 00:05:05.672
+in JavaScript and rust,
+though we'll see two differences.
+
+00:05:05.672 --> 00:05:08.274
+First, you have to mark the array
+with a mute keyword.
+
+00:05:08.274 --> 00:05:10.343
+Only then can you mutate its values.
+
+00:05:10.343 --> 00:05:12.211
+But the changes is explicit and clear.
+
+00:05:12.211 --> 00:05:15.782
+The second difference is that you cannot
+mix mutable and in mutable references.
+
+00:05:15.815 --> 00:05:17.817
+You can either have
+a single mutable reference
+
+00:05:17.817 --> 00:05:19.652
+or any number of immutable references.
+
+00:05:19.652 --> 00:05:23.756
+For this reason, some rust developers
+call references exclusive mutable
+
+00:05:23.890 --> 00:05:26.059
+and shared immutable.
+
+00:05:26.059 --> 00:05:26.893
+That was a lot.
+
+00:05:26.893 --> 00:05:29.462
+Mutability References Ownership Compiling.
+
+00:05:29.462 --> 00:05:31.297
+Let's take a quick break
+and look at a few things
+
+00:05:31.297 --> 00:05:34.033
+that will look very familiar to you
+as a JavaScript developer.
+
+00:05:34.033 --> 00:05:35.268
+When rust was being developed,
+
+00:05:35.268 --> 00:05:39.205
+they built its package manager cargo
+based on the best parts about NPM.
+
+00:05:39.238 --> 00:05:40.907
+So it feels very much like AMPM,
+
+00:05:40.907 --> 00:05:44.777
+but with superpowers, it handles packages,
+test running, compiling and more.
+
+00:05:44.811 --> 00:05:46.512
+There are lots of other similarities too.
+
+00:05:46.512 --> 00:05:50.049
+Instead of a package that JSON file,
+you have a cargo dot Tamil file.
+
+00:05:50.049 --> 00:05:52.051
+Instead of packages, you have crates
+
+00:05:52.051 --> 00:05:56.322
+and you can explore all 130,000
+plus of them at Crate Style.
+
+00:05:56.356 --> 00:05:58.925
+An online registry like NPM Jasco.
+
+00:05:58.925 --> 00:06:00.827
+But you'll notice
+a lot of other similarities,
+
+00:06:00.827 --> 00:06:06.232
+like the comments syntax, the structuring,
+async await imports, exports and more.
+
+00:06:06.265 --> 00:06:10.269
+Let's jump back into the overview by
+looking at this fourth key concept types.
+
+00:06:10.336 --> 00:06:11.804
+Now, if you're familiar with TypeScript,
+
+00:06:11.804 --> 00:06:13.940
+this is going to look very similar
+in syntax.
+
+00:06:13.940 --> 00:06:17.610
+However, Rust gives you way more options
+and actually enforces the types.
+
+00:06:17.643 --> 00:06:21.047
+It's a static and strongly typed
+language in plain English.
+
+00:06:21.147 --> 00:06:24.684
+This means every value must have a type
+either inferred or declared,
+
+00:06:24.784 --> 00:06:27.086
+and that type is enforced at compile time.
+
+00:06:27.086 --> 00:06:29.522
+Sorry,
+you can't just coerce numbers into strings
+
+00:06:29.522 --> 00:06:32.458
+whenever you feel like it
+without explicitly marking that change.
+
+00:06:32.458 --> 00:06:33.393
+Like TypeScript.
+
+00:06:33.393 --> 00:06:35.962
+Rust can often infer types for you,
+for instance.
+
+00:06:35.962 --> 00:06:40.633
+It can infer that my NUM is an I30 too,
+and my name is a string slice.
+
+00:06:40.633 --> 00:06:42.869
+While using
+the inferred types is often sufficient,
+
+00:06:42.869 --> 00:06:44.370
+you can provide more direction
+
+00:06:44.370 --> 00:06:47.473
+with an explicit declaration in rust
+gives you lots of options.
+
+00:06:47.473 --> 00:06:50.042
+You don't need to know them all by heart
+when you first start learning.
+
+00:06:50.042 --> 00:06:51.277
+But as a brief example,
+
+00:06:51.277 --> 00:06:53.312
+instead of the single number
+in typescript,
+
+00:06:53.312 --> 00:06:57.183
+Rust gives you size specific options
+for integers and floating points.
+
+00:06:57.216 --> 00:06:58.017
+So that's what,
+
+00:06:58.017 --> 00:07:01.287
+more than 20 different number types,
+four type scripts, one number type.
+
+00:07:01.454 --> 00:07:05.191
+But what you can control
+how much memory is reserved with each type
+
+00:07:05.191 --> 00:07:08.628
+instead of the inferred I30 two,
+which reserved space for numbers
+
+00:07:08.628 --> 00:07:13.065
+from about -2 million to positive 2
+million as the IE means sign.
+
+00:07:13.132 --> 00:07:15.101
+In other words,
+it can be positive or negative.
+
+00:07:15.101 --> 00:07:16.536
+I can type this number as a U.
+
+00:07:16.536 --> 00:07:19.739
+Eight which reserves space for a number
+from only zero
+
+00:07:19.772 --> 00:07:23.242
+to positive to 55 as the U means unsigned.
+
+00:07:23.342 --> 00:07:24.744
+That's quite a memory improvement.
+
+00:07:24.744 --> 00:07:26.846
+There are lots of other types
+like structs,
+
+00:07:26.846 --> 00:07:31.117
+which are custom data types that look and
+act very similar to JavaScript objects.
+
+00:07:31.117 --> 00:07:34.620
+Enemies which are lists,
+a fixed named values and more.
+
+00:07:34.620 --> 00:07:37.690
+Again, the specific syntax here
+isn't super important at this stage
+
+00:07:37.690 --> 00:07:38.591
+in your journey.
+
+00:07:38.591 --> 00:07:42.662
+Just know that you have to give everything
+a type, either explicitly or implicitly,
+
+00:07:42.795 --> 00:07:44.130
+and that you have lots of options.
+
+00:07:44.130 --> 00:07:46.399
+This also means there's no any in rust.
+
+00:07:46.399 --> 00:07:48.534
+Sorry, I know.
+And there's not even a null type.
+
+00:07:48.534 --> 00:07:52.872
+That's because rust forces you to handle
+all possible errors at compile time.
+
+00:07:52.872 --> 00:07:56.843
+And that's our final topic. Error handling
+
+00:07:56.943 --> 00:07:59.212
+No language
+removes the possibility of errors,
+
+00:07:59.212 --> 00:08:01.047
+but rust forces you to handle them.
+
+00:08:01.047 --> 00:08:03.449
+Rust divides
+all errors into two categories
+
+00:08:03.449 --> 00:08:06.986
+unrecoverable and recoverable
+unrecoverable errors are errors
+
+00:08:06.986 --> 00:08:10.022
+that should stop your program,
+which rust will do with a panic macro.
+
+00:08:10.022 --> 00:08:11.924
+Your program will stop immediately
+
+00:08:11.924 --> 00:08:14.927
+and produce a trace to the here
+for recoverable errors.
+
+00:08:15.027 --> 00:08:18.297
+Rust provides lots of tools to force you
+to handle any possible issues.
+
+00:08:18.331 --> 00:08:21.067
+Let's talk about just two matching
+and the result type.
+
+00:08:21.067 --> 00:08:24.370
+We'll call the divide function
+and pass into integers.
+
+00:08:24.403 --> 00:08:27.273
+Note the match keyword matches
+like a switch statement,
+
+00:08:27.273 --> 00:08:30.443
+but it forces you to exhaustively handle
+all possible cases.
+
+00:08:30.610 --> 00:08:32.011
+When the divide function runs
+
+00:08:32.011 --> 00:08:34.981
+will get back a result type,
+which has two possibilities.
+
+00:08:35.014 --> 00:08:35.681
+Okay.
+
+00:08:35.681 --> 00:08:38.751
+Or error
+and this example will log either option.
+
+00:08:38.784 --> 00:08:42.588
+The divide function then returns an error
+if trying to divide by zero
+
+00:08:42.822 --> 00:08:44.657
+and the result for any other value.
+
+00:08:44.657 --> 00:08:47.927
+You may notice that you don't have to say
+return the final expressions
+
+00:08:47.927 --> 00:08:50.530
+and both the F and else blocks
+return automatically.
+
+00:08:50.530 --> 00:08:52.832
+Understanding
+these five conceptual differences
+
+00:08:52.832 --> 00:08:54.867
+will prime the path
+for your learning rust.
+
+00:08:54.867 --> 00:08:56.969
+Now I promise you for learning steps.
+
+00:08:56.969 --> 00:09:01.908
+Unlike the jungle of YouTube videos,
+random MDMA docs and coding tutorials
+
+00:09:01.908 --> 00:09:05.044
+with 20 ways to do everything a JavaScript
+and this is going to blow your mind.
+
+00:09:05.044 --> 00:09:07.313
+Rust gives you a defined learning path.
+
+00:09:07.313 --> 00:09:10.249
+Start by going to rust lang dawgs learn.
+
+00:09:10.249 --> 00:09:11.651
+Here you'll see three steps.
+
+00:09:11.651 --> 00:09:14.720
+The book is a comprehensive
+getting started guide for the Language.
+
+00:09:14.754 --> 00:09:17.757
+There's even a new interactive,
+self-guided version of the book
+
+00:09:17.890 --> 00:09:20.226
+with quizzes and fun projects
+along the way.
+
+00:09:20.226 --> 00:09:20.993
+Second, there's
+
+00:09:20.993 --> 00:09:24.897
+an official course that focuses on syntax
+and runs directly in your terminal.
+
+00:09:24.931 --> 00:09:26.399
+You can even run it in your browser.
+
+00:09:26.399 --> 00:09:29.068
+Solve each syntax error
+to move to the next level.
+
+00:09:29.068 --> 00:09:29.936
+Third, rust
+
+00:09:29.936 --> 00:09:33.673
+by example is a collection of examples
+that show how rust works in practice.
+
+00:09:33.739 --> 00:09:37.043
+Each example is heavily documented
+to walk you through the concepts
+
+00:09:37.209 --> 00:09:38.878
+using actual code examples.
+
+00:09:38.878 --> 00:09:40.913
+Before I mention
+one final step for learning Rust
+
+00:09:40.913 --> 00:09:44.116
+did you know that there's official editor
+tooling with helpful tips,
+
+00:09:44.250 --> 00:09:47.253
+display errors and more
+you'll write into your favorite editor.
+
+00:09:47.253 --> 00:09:51.090
+Rust also includes a built in formatter
+that acts like prettier a letter
+
+00:09:51.090 --> 00:09:52.491
+that works like s lint.
+
+00:09:52.491 --> 00:09:54.860
+And since rust is static
+and strongly typed,
+
+00:09:54.860 --> 00:09:58.464
+every crate has full documentation
+at docs dot.
+
+00:09:58.531 --> 00:10:01.200
+Rust feels safe to write
+because it has clear guidance
+
+00:10:01.200 --> 00:10:05.171
+and strong opinions and how you should
+learn, write and run your rust code.
+
+00:10:05.204 --> 00:10:08.307
+The fourth and final tool
+is the standard library documentation.
+
+00:10:08.341 --> 00:10:11.877
+It's famous for its clear
+description of all built in rust applets.
+
+00:10:11.911 --> 00:10:14.981
+If you ever get stuck, this example
+rich guide will have the answers
+
+00:10:14.981 --> 00:10:16.382
+and teach you rust along the way.
+
+00:10:16.382 --> 00:10:18.918
+So there you have it
+A brief survey of the concepts
+
+00:10:18.918 --> 00:10:20.820
+you'll need to understand
+as a JavaScript developer.
+
+00:10:20.820 --> 00:10:22.855
+Learning rust
+along with a clear learning path.
+
+00:10:22.855 --> 00:10:26.659
+Once you learn rust, spin up a full stack
+website with laptops or rocket build
+
+00:10:26.659 --> 00:10:30.363
+a command line tool with clop, make a game
+with amethyst or anything else.
+
+00:10:30.363 --> 00:10:33.332
+And if you're interested in more tutorials
+on Rust, let us know below.
+
+00:10:33.399 --> 00:10:34.100
+Thanks for watching.
+

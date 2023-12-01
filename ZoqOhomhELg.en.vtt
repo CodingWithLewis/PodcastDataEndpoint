@@ -1,0 +1,2413 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:00.929
+10, 000 and
+
+00:00:00.940 --> 00:00:01.630
+more software
+
+00:00:01.630 --> 00:00:02.710
+engineers updating
+
+00:00:02.710 --> 00:00:03.770
+a repository of
+
+00:00:03.810 --> 00:00:05.000
+over 2 billion
+
+00:00:05.000 --> 00:00:05.810
+lines of code.
+
+00:00:05.840 --> 00:00:06.370
+How does big
+
+00:00:06.390 --> 00:00:07.610
+tech make big and
+
+00:00:07.610 --> 00:00:08.520
+small changes to
+
+00:00:08.520 --> 00:00:09.320
+their software?
+
+00:00:13.040 --> 00:00:13.879
+In today's video,
+
+00:00:13.919 --> 00:00:14.460
+we're going to find
+
+00:00:14.460 --> 00:00:15.590
+out how thousands of
+
+00:00:15.590 --> 00:00:16.680
+software engineers
+
+00:00:16.720 --> 00:00:17.480
+can contribute
+
+00:00:17.480 --> 00:00:18.230
+to a massive
+
+00:00:18.230 --> 00:00:19.859
+repository fast and
+
+00:00:19.860 --> 00:00:20.869
+at the same time.
+
+00:00:22.610 --> 00:00:23.079
+Welcome back
+
+00:00:23.079 --> 00:00:23.759
+to the channel.
+
+00:00:23.820 --> 00:00:24.570
+If you're new here,
+
+00:00:24.570 --> 00:00:25.439
+then my name is
+
+00:00:25.439 --> 00:00:26.509
+Lewis, and I'm on a
+
+00:00:26.509 --> 00:00:27.900
+mission to inspire
+
+00:00:27.900 --> 00:00:28.900
+developers and
+
+00:00:28.900 --> 00:00:29.680
+tech enthusiasts.
+
+00:00:33.835 --> 00:00:34.785
+You just begin your
+
+00:00:34.795 --> 00:00:35.845
+job as a junior
+
+00:00:35.845 --> 00:00:36.864
+developer at one
+
+00:00:36.864 --> 00:00:37.575
+of the largest
+
+00:00:37.585 --> 00:00:38.305
+tech companies
+
+00:00:38.305 --> 00:00:38.985
+in the world.
+
+00:00:39.275 --> 00:00:40.265
+Your first job
+
+00:00:40.275 --> 00:00:41.095
+outside fixing
+
+00:00:41.095 --> 00:00:42.465
+bugs, create a
+
+00:00:42.465 --> 00:00:43.415
+video player with
+
+00:00:43.425 --> 00:00:44.504
+live reactions
+
+00:00:44.575 --> 00:00:45.685
+on the time code.
+
+00:00:46.135 --> 00:00:47.345
+Now is your time
+
+00:00:47.345 --> 00:00:48.375
+to prove yourself.
+
+00:00:48.565 --> 00:00:49.395
+You can prove that
+
+00:00:49.395 --> 00:00:49.935
+you were meant
+
+00:00:49.935 --> 00:00:50.735
+for this job.
+
+00:00:50.925 --> 00:00:51.985
+From junior to
+
+00:00:51.985 --> 00:00:53.935
+senior in 2 billion
+
+00:00:54.045 --> 00:00:54.954
+lines of code.
+
+00:00:55.025 --> 00:00:55.075
+A
+
+00:01:01.455 --> 00:01:02.364
+monolithic
+
+00:01:02.425 --> 00:01:03.355
+repository.
+
+00:01:03.424 --> 00:01:04.165
+A common and
+
+00:01:04.165 --> 00:01:05.094
+recently popular
+
+00:01:05.094 --> 00:01:05.925
+way to store your
+
+00:01:05.925 --> 00:01:06.885
+code in a single
+
+00:01:06.885 --> 00:01:08.405
+repository, even if
+
+00:01:08.405 --> 00:01:09.375
+multiple projects
+
+00:01:09.415 --> 00:01:10.354
+are inside of it.
+
+00:01:10.405 --> 00:01:11.095
+A single source
+
+00:01:11.095 --> 00:01:12.585
+of truth, reusing
+
+00:01:12.605 --> 00:01:13.655
+and resharing code
+
+00:01:13.665 --> 00:01:14.935
+across applications.
+
+00:01:15.015 --> 00:01:16.215
+Collaboration across
+
+00:01:16.215 --> 00:01:17.185
+different teams is
+
+00:01:17.185 --> 00:01:18.265
+the advantages of
+
+00:01:18.265 --> 00:01:19.215
+this type of style.
+
+00:01:19.264 --> 00:01:20.385
+The disadvantages?
+
+00:01:20.415 --> 00:01:20.785
+Well...
+
+00:01:21.179 --> 00:01:22.100
+Two billion lines of
+
+00:01:22.110 --> 00:01:25.920
+code gets a version
+
+00:01:25.920 --> 00:01:26.760
+control system
+
+00:01:26.760 --> 00:01:27.620
+that's basically
+
+00:01:27.620 --> 00:01:29.030
+used Universally,
+
+00:01:29.070 --> 00:01:29.920
+but what happens
+
+00:01:29.920 --> 00:01:30.789
+when you push it to
+
+00:01:30.790 --> 00:01:32.280
+its absolute limits
+
+00:01:32.400 --> 00:01:33.580
+like 1 billion
+
+00:01:33.580 --> 00:01:35.049
+files terabytes
+
+00:01:35.210 --> 00:01:36.160
+worth of content
+
+00:01:36.180 --> 00:01:37.199
+Solutions like a
+
+00:01:37.199 --> 00:01:38.430
+virtual file system
+
+00:01:38.440 --> 00:01:39.570
+forget or Google's
+
+00:01:39.599 --> 00:01:40.889
+proprietary Piper
+
+00:01:41.109 --> 00:01:41.980
+less developers
+
+00:01:42.250 --> 00:01:43.500
+clone Only the files
+
+00:01:43.500 --> 00:01:44.470
+that are relevant to
+
+00:01:44.470 --> 00:01:45.180
+what they're working
+
+00:01:45.180 --> 00:01:46.210
+on It shows you the
+
+00:01:46.210 --> 00:01:47.460
+entire repository
+
+00:01:47.490 --> 00:01:48.350
+without it having
+
+00:01:48.380 --> 00:01:49.390
+downloaded and
+
+00:01:49.400 --> 00:01:50.290
+more efficiencies
+
+00:01:50.300 --> 00:01:51.010
+that will make a
+
+00:01:51.010 --> 00:01:52.110
+2 billion lines of
+
+00:01:52.110 --> 00:01:53.640
+code repository feel
+
+00:01:53.640 --> 00:01:54.950
+like a 10, 000 line
+
+00:01:54.950 --> 00:01:56.160
+of code repository.
+
+00:01:56.170 --> 00:01:57.229
+So once you clone
+
+00:01:57.230 --> 00:01:58.210
+the repository,
+
+00:01:58.390 --> 00:01:59.270
+everything is
+
+00:01:59.270 --> 00:02:00.050
+a placeholder.
+
+00:02:00.110 --> 00:02:01.359
+Okay, embed
+
+00:02:01.360 --> 00:02:02.360
+video player in
+
+00:02:02.360 --> 00:02:03.519
+standard webpage.
+
+00:02:03.570 --> 00:02:04.560
+Okay, that shouldn't
+
+00:02:04.570 --> 00:02:05.440
+be too hard.
+
+00:02:05.490 --> 00:02:06.490
+So we have the front
+
+00:02:06.490 --> 00:02:07.400
+end components we
+
+00:02:07.410 --> 00:02:08.330
+have to build as
+
+00:02:08.350 --> 00:02:09.870
+well as some API
+
+00:02:09.870 --> 00:02:10.180
+endpoints with some
+
+00:02:10.180 --> 00:02:11.180
+database migrations
+
+00:02:11.180 --> 00:02:11.960
+we have to do.
+
+00:02:12.159 --> 00:02:13.010
+Okay, let's open
+
+00:02:13.010 --> 00:02:13.770
+up the code editor
+
+00:02:13.800 --> 00:02:14.619
+and get started.
+
+00:02:15.035 --> 00:02:15.975
+Let's see,
+
+00:02:16.415 --> 00:02:16.824
+alright, videopage.
+
+00:02:16.825 --> 00:02:19.125
+tsx is probably
+
+00:02:19.125 --> 00:02:19.505
+where I should
+
+00:02:19.505 --> 00:02:20.005
+put this.
+
+00:02:22.535 --> 00:02:23.385
+Once the file is
+
+00:02:23.385 --> 00:02:24.115
+loaded, it will
+
+00:02:24.135 --> 00:02:24.895
+understand what
+
+00:02:24.895 --> 00:02:25.894
+files it depends
+
+00:02:25.895 --> 00:02:26.455
+on and then
+
+00:02:26.455 --> 00:02:27.254
+start downloading
+
+00:02:27.254 --> 00:02:28.034
+those as well.
+
+00:02:28.065 --> 00:02:28.645
+That way, it's
+
+00:02:28.645 --> 00:02:29.354
+just the code that
+
+00:02:29.355 --> 00:02:30.384
+you're using that
+
+00:02:30.385 --> 00:02:31.165
+needs to be on
+
+00:02:31.165 --> 00:02:32.225
+your local machine.
+
+00:02:32.334 --> 00:02:32.815
+Everything is
+
+00:02:32.815 --> 00:02:34.035
+hosted on a gigantic
+
+00:02:34.055 --> 00:02:35.105
+git repository
+
+00:02:35.135 --> 00:02:35.815
+in the cloud that
+
+00:02:35.825 --> 00:02:36.815
+you can then push
+
+00:02:36.835 --> 00:02:37.765
+at a later time.
+
+00:02:38.555 --> 00:02:40.085
+Whew, okay, that
+
+00:02:40.085 --> 00:02:40.815
+wasn't too hard,
+
+00:02:40.835 --> 00:02:42.005
+but I mean, it's
+
+00:02:42.265 --> 00:02:43.025
+pretty simple.
+
+00:02:43.430 --> 00:02:44.180
+Just embed the
+
+00:02:44.180 --> 00:02:44.830
+video player.
+
+00:02:44.850 --> 00:02:45.350
+I think we can
+
+00:02:45.350 --> 00:02:46.070
+do much better.
+
+00:02:46.150 --> 00:02:46.850
+And you know what?
+
+00:02:46.850 --> 00:02:47.570
+Let's add a cool
+
+00:02:47.580 --> 00:02:48.530
+little feature here.
+
+00:02:56.460 --> 00:02:56.680
+All right,
+
+00:02:56.680 --> 00:02:57.109
+let's submit a
+
+00:02:57.110 --> 00:02:57.770
+pull request.
+
+00:02:58.310 --> 00:02:59.390
+Oh, what?
+
+00:02:59.580 --> 00:03:01.490
+Um, okay, whatever.
+
+00:03:02.080 --> 00:03:02.450
+Just, we'll
+
+00:03:02.450 --> 00:03:03.320
+submit anyway.
+
+00:03:03.980 --> 00:03:05.050
+What on earth
+
+00:03:05.060 --> 00:03:06.110
+happened here now?
+
+00:03:06.120 --> 00:03:06.790
+Get works.
+
+00:03:07.875 --> 00:03:08.785
+You branch off of
+
+00:03:08.785 --> 00:03:09.485
+the main branch
+
+00:03:09.485 --> 00:03:10.295
+to make changes to
+
+00:03:10.295 --> 00:03:11.195
+your code, and then
+
+00:03:11.195 --> 00:03:12.155
+merge that code in
+
+00:03:12.185 --> 00:03:13.055
+at a later time.
+
+00:03:13.095 --> 00:03:13.805
+The longer you work
+
+00:03:13.805 --> 00:03:14.645
+on a branch separate
+
+00:03:14.645 --> 00:03:15.334
+from main, the
+
+00:03:15.335 --> 00:03:16.075
+bigger your feature
+
+00:03:16.075 --> 00:03:16.905
+grows and the more
+
+00:03:16.905 --> 00:03:18.035
+updated it becomes.
+
+00:03:18.135 --> 00:03:18.914
+Eventually, you'll
+
+00:03:18.914 --> 00:03:19.805
+need to rebase it
+
+00:03:19.845 --> 00:03:20.645
+onto the updated
+
+00:03:20.645 --> 00:03:21.715
+main to continue.
+
+00:03:21.795 --> 00:03:22.695
+And most workflows
+
+00:03:22.704 --> 00:03:23.895
+have this idea that
+
+00:03:23.994 --> 00:03:25.165
+one branch is...
+
+00:03:25.400 --> 00:03:26.890
+Equal to one
+
+00:03:26.890 --> 00:03:27.600
+pull request.
+
+00:03:27.610 --> 00:03:28.310
+But what happens
+
+00:03:28.310 --> 00:03:29.010
+when you're working
+
+00:03:29.020 --> 00:03:30.100
+on a large feature,
+
+00:03:30.100 --> 00:03:31.380
+but require the main
+
+00:03:31.380 --> 00:03:32.100
+branch with your
+
+00:03:32.100 --> 00:03:33.180
+requested changes
+
+00:03:33.389 --> 00:03:34.710
+in order to work on
+
+00:03:34.710 --> 00:03:35.540
+the next feature?
+
+00:03:35.620 --> 00:03:36.450
+Like, for example,
+
+00:03:36.450 --> 00:03:37.139
+the video player
+
+00:03:37.139 --> 00:03:37.930
+feature being
+
+00:03:37.930 --> 00:03:38.680
+finished and then
+
+00:03:38.680 --> 00:03:39.510
+deciding to work
+
+00:03:39.510 --> 00:03:40.329
+on that timecode
+
+00:03:40.330 --> 00:03:41.999
+feature that relies.
+
+00:03:42.185 --> 00:03:42.625
+on that
+
+00:03:42.625 --> 00:03:43.435
+video player.
+
+00:03:43.465 --> 00:03:44.055
+And this is
+
+00:03:44.075 --> 00:03:44.945
+where stacking
+
+00:03:44.975 --> 00:03:46.005
+comes into play.
+
+00:03:46.315 --> 00:03:47.025
+Stacking lets
+
+00:03:47.025 --> 00:03:47.685
+you make little
+
+00:03:47.685 --> 00:03:48.625
+changes instead of
+
+00:03:48.625 --> 00:03:49.885
+single giant ones.
+
+00:03:49.965 --> 00:03:50.385
+While waiting
+
+00:03:50.385 --> 00:03:50.955
+for your video
+
+00:03:50.955 --> 00:03:51.735
+feature review,
+
+00:03:51.795 --> 00:03:52.725
+create a new branch
+
+00:03:52.734 --> 00:03:53.505
+on the existing
+
+00:03:53.505 --> 00:03:54.585
+one for parallel
+
+00:03:54.585 --> 00:03:55.705
+timecode reactions.
+
+00:03:55.745 --> 00:03:56.695
+These interdependent
+
+00:03:56.695 --> 00:03:57.625
+branches form a
+
+00:03:57.625 --> 00:03:58.484
+stack, which is
+
+00:03:58.484 --> 00:03:59.675
+compact and easily
+
+00:03:59.675 --> 00:04:00.965
+rebased onto main.
+
+00:04:00.975 --> 00:04:01.825
+So you can develop
+
+00:04:01.825 --> 00:04:02.475
+the timecode
+
+00:04:02.485 --> 00:04:03.605
+reactions once
+
+00:04:03.605 --> 00:04:04.345
+that's finished.
+
+00:04:04.425 --> 00:04:04.905
+Depending on
+
+00:04:04.905 --> 00:04:05.275
+your feature's
+
+00:04:05.315 --> 00:04:06.285
+complexity, you can
+
+00:04:06.315 --> 00:04:07.135
+add small branches
+
+00:04:07.135 --> 00:04:07.725
+to your stack.
+
+00:04:07.885 --> 00:04:08.405
+Even while
+
+00:04:08.405 --> 00:04:09.234
+awaiting previous
+
+00:04:09.234 --> 00:04:10.065
+branch reviews.
+
+00:04:10.135 --> 00:04:11.015
+The advantages of
+
+00:04:11.015 --> 00:04:11.625
+this is that you
+
+00:04:11.625 --> 00:04:12.575
+don't rely on the
+
+00:04:12.575 --> 00:04:13.595
+main branch being
+
+00:04:13.595 --> 00:04:14.375
+the only source
+
+00:04:14.375 --> 00:04:15.155
+of truth in your
+
+00:04:15.155 --> 00:04:16.354
+development process.
+
+00:04:16.424 --> 00:04:17.034
+You also don't have
+
+00:04:17.034 --> 00:04:18.044
+to wait for long
+
+00:04:18.044 --> 00:04:18.794
+periods of time
+
+00:04:18.794 --> 00:04:19.554
+for something to be
+
+00:04:19.604 --> 00:04:20.524
+added into the main
+
+00:04:20.524 --> 00:04:21.654
+branch and you can
+
+00:04:21.654 --> 00:04:22.674
+create small pieces
+
+00:04:22.674 --> 00:04:23.305
+of code that can
+
+00:04:23.334 --> 00:04:24.454
+easily be reviewed.
+
+00:04:24.465 --> 00:04:25.384
+So if our stack
+
+00:04:25.385 --> 00:04:26.094
+is five branches
+
+00:04:26.114 --> 00:04:26.965
+tall and the first
+
+00:04:26.965 --> 00:04:27.525
+branch is ready
+
+00:04:27.525 --> 00:04:28.224
+to be merged into
+
+00:04:28.224 --> 00:04:29.005
+the main branch.
+
+00:04:29.210 --> 00:04:29.650
+It would merge
+
+00:04:29.650 --> 00:04:30.400
+that branch and
+
+00:04:30.400 --> 00:04:31.080
+then rebase the
+
+00:04:31.080 --> 00:04:31.849
+branches that it
+
+00:04:31.849 --> 00:04:32.659
+would depend on.
+
+00:04:32.670 --> 00:04:33.330
+By this point,
+
+00:04:33.340 --> 00:04:34.060
+you could work on
+
+00:04:34.060 --> 00:04:35.010
+completely different
+
+00:04:35.020 --> 00:04:36.000
+things and then this
+
+00:04:36.010 --> 00:04:37.090
+allows the thousands
+
+00:04:37.090 --> 00:04:37.900
+of developers to
+
+00:04:37.900 --> 00:04:38.859
+continue working
+
+00:04:38.869 --> 00:04:39.570
+on making the
+
+00:04:39.570 --> 00:04:40.389
+software better
+
+00:04:40.599 --> 00:04:41.520
+without waiting for
+
+00:04:41.539 --> 00:04:42.900
+automated processes.
+
+00:04:43.239 --> 00:04:44.159
+And large companies
+
+00:04:44.159 --> 00:04:45.219
+like Google have
+
+00:04:45.299 --> 00:04:46.249
+implemented this
+
+00:04:46.279 --> 00:04:47.029
+with internal
+
+00:04:47.029 --> 00:04:47.739
+tools that they
+
+00:04:47.739 --> 00:04:48.380
+specifically
+
+00:04:48.380 --> 00:04:48.940
+developed,
+
+00:04:49.150 --> 00:04:49.900
+called critiques.
+
+00:04:50.229 --> 00:04:50.859
+or Facebook
+
+00:04:50.879 --> 00:04:51.819
+with Fabricator.
+
+00:04:51.869 --> 00:04:52.599
+Tools made by
+
+00:04:52.629 --> 00:04:53.640
+engineers to
+
+00:04:53.640 --> 00:04:54.729
+improve developer
+
+00:04:54.729 --> 00:04:55.549
+productivity.
+
+00:04:55.599 --> 00:04:56.590
+And modern Git makes
+
+00:04:56.590 --> 00:04:58.059
+it hard to implement
+
+00:04:58.069 --> 00:04:59.590
+stacking on its own
+
+00:04:59.599 --> 00:05:00.449
+because it wasn't
+
+00:05:00.460 --> 00:05:01.379
+built to handle the
+
+00:05:01.379 --> 00:05:02.330
+dependencies and
+
+00:05:02.330 --> 00:05:03.429
+rebasing required
+
+00:05:03.429 --> 00:05:04.229
+to maintain a
+
+00:05:04.229 --> 00:05:05.299
+stacking workflow.
+
+00:05:05.359 --> 00:05:06.340
+So modern tooling
+
+00:05:06.349 --> 00:05:07.080
+based companies
+
+00:05:07.080 --> 00:05:08.259
+like Graphite or
+
+00:05:08.289 --> 00:05:09.330
+open source projects
+
+00:05:09.330 --> 00:05:10.749
+like GHStack help
+
+00:05:10.749 --> 00:05:11.859
+developers automate
+
+00:05:11.859 --> 00:05:12.650
+this process.
+
+00:05:12.799 --> 00:05:13.440
+Think about it,
+
+00:05:13.440 --> 00:05:14.270
+when you have over
+
+00:05:14.270 --> 00:05:15.539
+10, 000 engineers
+
+00:05:15.539 --> 00:05:16.450
+submitting code,
+
+00:05:16.530 --> 00:05:17.499
+having even 10
+
+00:05:17.499 --> 00:05:18.080
+percent of them
+
+00:05:18.080 --> 00:05:18.880
+blocked because of
+
+00:05:18.880 --> 00:05:19.960
+code review can cost
+
+00:05:19.969 --> 00:05:21.159
+millions of dollars.
+
+00:05:21.210 --> 00:05:21.729
+And thanks to
+
+00:05:21.729 --> 00:05:22.449
+today's sponsor,
+
+00:05:22.450 --> 00:05:23.389
+Graphite, doing
+
+00:05:23.399 --> 00:05:24.299
+code reviews is
+
+00:05:24.349 --> 00:05:25.780
+much easier and
+
+00:05:25.780 --> 00:05:26.709
+simpler, so you can
+
+00:05:26.710 --> 00:05:28.109
+constantly ship at
+
+00:05:28.109 --> 00:05:29.249
+a much faster rate.
+
+00:05:29.329 --> 00:05:30.269
+Large tech companies
+
+00:05:30.269 --> 00:05:30.919
+like Facebook or
+
+00:05:30.919 --> 00:05:31.700
+Google have built
+
+00:05:31.729 --> 00:05:32.780
+internal code review
+
+00:05:32.780 --> 00:05:33.669
+tools that allow
+
+00:05:33.669 --> 00:05:34.349
+them to change their
+
+00:05:34.349 --> 00:05:35.439
+code base rapidly,
+
+00:05:35.640 --> 00:05:36.179
+but others are
+
+00:05:36.179 --> 00:05:37.099
+struggling to find
+
+00:05:37.099 --> 00:05:38.200
+a tool that supports
+
+00:05:38.200 --> 00:05:39.140
+the same workflow.
+
+00:05:39.155 --> 00:05:39.734
+And Graphite
+
+00:05:39.744 --> 00:05:40.304
+enables this
+
+00:05:40.315 --> 00:05:41.505
+workflow entirely.
+
+00:05:41.544 --> 00:05:42.484
+With the overarching
+
+00:05:42.494 --> 00:05:43.304
+goal of increasing
+
+00:05:43.304 --> 00:05:44.565
+developer velocity,
+
+00:05:44.594 --> 00:05:45.554
+the CLI and
+
+00:05:45.554 --> 00:05:46.184
+dashboard let
+
+00:05:46.215 --> 00:05:46.854
+engineers take
+
+00:05:46.854 --> 00:05:47.614
+advantage of the
+
+00:05:47.614 --> 00:05:48.684
+stacking workflow
+
+00:05:48.754 --> 00:05:49.315
+while syncing
+
+00:05:49.334 --> 00:05:50.054
+all of your data
+
+00:05:50.104 --> 00:05:50.604
+back to GitHub.
+
+00:05:51.025 --> 00:05:51.804
+So, while you
+
+00:05:51.874 --> 00:05:52.464
+technically
+
+00:05:52.474 --> 00:05:53.205
+can stack with
+
+00:05:53.214 --> 00:05:53.945
+traditional Git,
+
+00:05:54.240 --> 00:05:55.380
+It's extremely
+
+00:05:55.380 --> 00:05:56.140
+tedious and
+
+00:05:56.140 --> 00:05:56.860
+impossible to
+
+00:05:56.860 --> 00:05:57.950
+manage dependencies
+
+00:05:57.950 --> 00:05:59.200
+manually at scale.
+
+00:05:59.260 --> 00:05:59.660
+So the Graphite
+
+00:05:59.660 --> 00:06:01.170
+CLI makes stacking
+
+00:06:01.190 --> 00:06:02.400
+easy by abstracting
+
+00:06:02.419 --> 00:06:03.230
+all the dependency
+
+00:06:03.230 --> 00:06:03.950
+management away
+
+00:06:03.950 --> 00:06:04.620
+from the user
+
+00:06:04.620 --> 00:06:05.400
+and allowing you
+
+00:06:05.400 --> 00:06:06.410
+to focus on just
+
+00:06:06.419 --> 00:06:06.950
+committing your
+
+00:06:06.950 --> 00:06:07.690
+code quickly.
+
+00:06:07.730 --> 00:06:08.909
+The Graphite CLI
+
+00:06:08.910 --> 00:06:09.720
+makes this process
+
+00:06:09.770 --> 00:06:10.729
+easy by letting you
+
+00:06:10.730 --> 00:06:11.685
+work with get while
+
+00:06:11.685 --> 00:06:12.595
+simplifying trunk
+
+00:06:12.595 --> 00:06:13.445
+based development
+
+00:06:13.475 --> 00:06:14.105
+and manage your
+
+00:06:14.105 --> 00:06:14.875
+dependencies that
+
+00:06:14.905 --> 00:06:15.965
+enables stacking.
+
+00:06:16.055 --> 00:06:16.685
+And just like in
+
+00:06:16.685 --> 00:06:17.615
+your Git workflow,
+
+00:06:17.655 --> 00:06:18.715
+you run a simple
+
+00:06:18.715 --> 00:06:19.815
+command to create
+
+00:06:19.815 --> 00:06:20.974
+a stack, navigate
+
+00:06:20.974 --> 00:06:21.495
+your stack,
+
+00:06:21.684 --> 00:06:22.235
+submitting your
+
+00:06:22.235 --> 00:06:23.165
+stack, and more.
+
+00:06:23.205 --> 00:06:23.735
+The Graphite
+
+00:06:23.735 --> 00:06:24.525
+dashboard makes it
+
+00:06:24.565 --> 00:06:25.355
+easy to stay in the
+
+00:06:25.355 --> 00:06:26.185
+loop by alerting
+
+00:06:26.185 --> 00:06:26.904
+you what pull
+
+00:06:26.905 --> 00:06:27.714
+requests need your
+
+00:06:27.715 --> 00:06:28.805
+actions, monitoring
+
+00:06:28.805 --> 00:06:29.845
+status, and giving
+
+00:06:29.845 --> 00:06:30.635
+a visual way to
+
+00:06:30.679 --> 00:06:31.599
+group and navigate
+
+00:06:31.599 --> 00:06:32.270
+between different
+
+00:06:32.270 --> 00:06:33.700
+PRs in a stack.
+
+00:06:33.760 --> 00:06:34.640
+So whether you're
+
+00:06:34.640 --> 00:06:35.859
+an engineer in a
+
+00:06:35.859 --> 00:06:37.210
+big team or just
+
+00:06:37.219 --> 00:06:38.440
+developing solo,
+
+00:06:38.770 --> 00:06:40.070
+Graphite's developer
+
+00:06:40.070 --> 00:06:40.760
+productivity
+
+00:06:40.760 --> 00:06:41.890
+tools and stacking
+
+00:06:41.890 --> 00:06:42.530
+workflow will
+
+00:06:42.530 --> 00:06:43.130
+help you ship
+
+00:06:43.130 --> 00:06:43.799
+code faster.
+
+00:06:43.820 --> 00:06:44.489
+If you're a junior
+
+00:06:44.489 --> 00:06:45.179
+dev looking to
+
+00:06:45.179 --> 00:06:45.770
+learn how big
+
+00:06:45.780 --> 00:06:46.530
+companies work,
+
+00:06:46.539 --> 00:06:47.810
+give Graphite a try.
+
+00:06:47.840 --> 00:06:48.640
+Graphite's really
+
+00:06:48.640 --> 00:06:49.219
+generous free
+
+00:06:49.219 --> 00:06:49.820
+tier gives you
+
+00:06:49.820 --> 00:06:50.469
+the ability to
+
+00:06:50.469 --> 00:06:51.150
+use stacking
+
+00:06:51.150 --> 00:06:51.859
+to help improve
+
+00:06:51.859 --> 00:06:52.659
+your workflow to
+
+00:06:52.659 --> 00:06:53.280
+see if it's just
+
+00:06:53.280 --> 00:06:53.919
+right for you.
+
+00:06:54.030 --> 00:06:54.380
+Some of the
+
+00:06:54.380 --> 00:06:55.080
+fastest moving
+
+00:06:55.080 --> 00:06:55.880
+tech companies are
+
+00:06:55.880 --> 00:06:56.829
+using Graphite to
+
+00:06:56.830 --> 00:06:57.549
+bring features to
+
+00:06:57.549 --> 00:06:58.969
+users much faster.
+
+00:06:59.030 --> 00:06:59.469
+Thanks again
+
+00:06:59.469 --> 00:06:59.999
+to Graphite
+
+00:07:00.000 --> 00:07:00.640
+for sponsoring
+
+00:07:00.640 --> 00:07:01.399
+today's video.
+
+00:07:01.469 --> 00:07:01.959
+Click the link in
+
+00:07:01.960 --> 00:07:02.599
+the description
+
+00:07:02.599 --> 00:07:03.499
+to ship your code
+
+00:07:03.500 --> 00:07:04.450
+faster and help
+
+00:07:04.450 --> 00:07:05.320
+support the channel.
+
+00:07:08.130 --> 00:07:08.960
+When you merge code
+
+00:07:08.960 --> 00:07:10.109
+in, what happens
+
+00:07:10.109 --> 00:07:10.620
+when the main
+
+00:07:10.620 --> 00:07:11.880
+source code changed
+
+00:07:11.900 --> 00:07:12.940
+multiple times?
+
+00:07:12.990 --> 00:07:13.870
+Merge conflicts
+
+00:07:13.900 --> 00:07:14.539
+arise.
+
+00:07:14.704 --> 00:07:15.824
+And this means
+
+00:07:15.824 --> 00:07:16.684
+that the person
+
+00:07:16.694 --> 00:07:17.754
+reviewing the code
+
+00:07:17.894 --> 00:07:18.884
+has to choose which
+
+00:07:18.884 --> 00:07:19.834
+code stays and
+
+00:07:19.844 --> 00:07:20.814
+which code goes.
+
+00:07:20.864 --> 00:07:21.394
+Like trying to
+
+00:07:21.394 --> 00:07:22.025
+fit multiple
+
+00:07:22.025 --> 00:07:22.704
+puzzle pieces
+
+00:07:22.724 --> 00:07:23.704
+into one slot.
+
+00:07:23.744 --> 00:07:24.934
+This leads to slower
+
+00:07:24.934 --> 00:07:25.655
+release times,
+
+00:07:25.804 --> 00:07:26.704
+decreased developer
+
+00:07:26.704 --> 00:07:27.764
+productivity, and
+
+00:07:27.764 --> 00:07:28.754
+potential bugs from
+
+00:07:28.754 --> 00:07:29.614
+the wrong pieces
+
+00:07:29.644 --> 00:07:30.344
+being chosen.
+
+00:07:30.414 --> 00:07:32.434
+But we have 1600
+
+00:07:32.465 --> 00:07:33.034
+pull requests
+
+00:07:33.034 --> 00:07:33.614
+to go through.
+
+00:07:33.645 --> 00:07:34.474
+How can this be
+
+00:07:34.474 --> 00:07:35.335
+done efficiently?
+
+00:07:35.424 --> 00:07:36.344
+One methodology
+
+00:07:36.344 --> 00:07:37.314
+is called trunk
+
+00:07:37.344 --> 00:07:38.234
+based development.
+
+00:07:38.314 --> 00:07:39.164
+Similar to stacking
+
+00:07:39.164 --> 00:07:39.684
+from earlier,
+
+00:07:39.814 --> 00:07:40.604
+you create small
+
+00:07:40.604 --> 00:07:41.274
+changes in your
+
+00:07:41.275 --> 00:07:42.214
+code and submit
+
+00:07:42.224 --> 00:07:43.104
+a pull request.
+
+00:07:43.194 --> 00:07:44.204
+In an extremely fast
+
+00:07:44.205 --> 00:07:45.004
+paced environment
+
+00:07:45.004 --> 00:07:45.794
+with thousands of
+
+00:07:45.794 --> 00:07:46.784
+software engineers,
+
+00:07:46.994 --> 00:07:47.924
+Reviewing a small
+
+00:07:47.924 --> 00:07:48.804
+amount of code is
+
+00:07:48.864 --> 00:07:49.834
+easier than large
+
+00:07:49.834 --> 00:07:50.525
+amounts of code.
+
+00:07:50.574 --> 00:07:51.334
+It's also less
+
+00:07:51.374 --> 00:07:52.434
+likely to conflict
+
+00:07:52.444 --> 00:07:53.444
+with other code that
+
+00:07:53.444 --> 00:07:54.334
+is being submitted.
+
+00:07:54.394 --> 00:07:56.144
+The trunk refers to
+
+00:07:56.144 --> 00:07:57.014
+the main branch in
+
+00:07:57.014 --> 00:07:58.004
+this instance, where
+
+00:07:58.004 --> 00:07:58.964
+you stay as close
+
+00:07:58.965 --> 00:07:59.974
+as possible to it.
+
+00:07:59.994 --> 00:08:00.694
+Once everything
+
+00:08:00.694 --> 00:08:01.594
+merges in, it's
+
+00:08:01.634 --> 00:08:02.614
+easier to rebase
+
+00:08:02.624 --> 00:08:03.524
+changes to other
+
+00:08:03.524 --> 00:08:04.304
+branches and
+
+00:08:04.354 --> 00:08:05.084
+pull requests.
+
+00:08:05.134 --> 00:08:05.674
+And for big
+
+00:08:05.675 --> 00:08:06.274
+features.
+
+00:08:06.435 --> 00:08:07.424
+Other methodologies
+
+00:08:07.455 --> 00:08:08.145
+like feature
+
+00:08:08.145 --> 00:08:09.025
+flagging lets you
+
+00:08:09.025 --> 00:08:09.825
+work on a feature
+
+00:08:09.825 --> 00:08:10.724
+really fast while
+
+00:08:10.724 --> 00:08:11.265
+not having it
+
+00:08:11.275 --> 00:08:12.044
+enabled at all
+
+00:08:12.044 --> 00:08:12.804
+in production.
+
+00:08:12.844 --> 00:08:13.655
+This makes it easy
+
+00:08:13.655 --> 00:08:14.395
+for you to compare
+
+00:08:14.395 --> 00:08:14.974
+code with pull
+
+00:08:14.974 --> 00:08:15.864
+requests that are
+
+00:08:15.914 --> 00:08:17.164
+only a day old and
+
+00:08:17.164 --> 00:08:18.094
+can get inserted
+
+00:08:18.104 --> 00:08:19.004
+into the source code
+
+00:08:19.054 --> 00:08:20.264
+as fast as possible.
+
+00:08:20.294 --> 00:08:21.624
+But of course, this
+
+00:08:21.645 --> 00:08:22.614
+can be automated.
+
+00:08:22.790 --> 00:08:23.620
+Even better.
+
+00:08:26.200 --> 00:08:26.870
+Merge queues.
+
+00:08:26.930 --> 00:08:27.650
+A queue of pull
+
+00:08:27.650 --> 00:08:28.370
+requests lined
+
+00:08:28.370 --> 00:08:29.380
+up by submitted
+
+00:08:29.470 --> 00:08:30.580
+or priority and
+
+00:08:30.630 --> 00:08:31.750
+automatically tested
+
+00:08:31.750 --> 00:08:32.750
+on the main branch.
+
+00:08:32.820 --> 00:08:33.460
+If it passes
+
+00:08:33.480 --> 00:08:34.170
+all checks,
+
+00:08:34.239 --> 00:08:35.060
+it is merged.
+
+00:08:35.380 --> 00:08:36.620
+If it fails, then
+
+00:08:36.630 --> 00:08:37.450
+usually sent back
+
+00:08:37.450 --> 00:08:38.200
+to the developer
+
+00:08:38.200 --> 00:08:39.130
+with how it failed.
+
+00:08:39.199 --> 00:08:40.000
+Some developers
+
+00:08:40.020 --> 00:08:40.800
+implement the merge
+
+00:08:40.800 --> 00:08:41.379
+queue in different
+
+00:08:41.380 --> 00:08:42.440
+ways, batching
+
+00:08:42.460 --> 00:08:43.120
+multiple pull
+
+00:08:43.120 --> 00:08:43.990
+requests together,
+
+00:08:44.200 --> 00:08:45.370
+doing one by one.
+
+00:08:45.615 --> 00:08:46.765
+Setting priority,
+
+00:08:46.845 --> 00:08:47.495
+et cetera.
+
+00:08:47.535 --> 00:08:48.425
+So with stacking
+
+00:08:48.425 --> 00:08:49.565
+and trunk, thousands
+
+00:08:49.565 --> 00:08:50.395
+of developers are
+
+00:08:50.435 --> 00:08:51.435
+able to submit code
+
+00:08:51.475 --> 00:08:52.495
+daily that billions
+
+00:08:52.495 --> 00:08:53.945
+of users rely on
+
+00:08:53.945 --> 00:08:55.145
+on a daily basis.
+
+00:08:57.284 --> 00:08:57.854
+Awesome.
+
+00:08:57.864 --> 00:08:59.395
+Your PR was approved
+
+00:08:59.465 --> 00:09:00.235
+and merged into
+
+00:09:00.235 --> 00:09:01.195
+the main branch.
+
+00:09:01.265 --> 00:09:02.024
+How does the code
+
+00:09:02.025 --> 00:09:03.145
+that you just
+
+00:09:03.145 --> 00:09:04.205
+wrote, as well as
+
+00:09:04.205 --> 00:09:05.585
+the code that 10,
+
+00:09:05.585 --> 00:09:06.535
+000 other engineers
+
+00:09:06.535 --> 00:09:07.075
+just wrote.
+
+00:09:07.670 --> 00:09:08.560
+Get to your
+
+00:09:08.560 --> 00:09:09.250
+computer.
+
+00:09:09.340 --> 00:09:09.850
+The code that
+
+00:09:09.850 --> 00:09:10.670
+developers write
+
+00:09:10.690 --> 00:09:11.660
+is processed to be
+
+00:09:11.660 --> 00:09:12.410
+optimized for the
+
+00:09:12.410 --> 00:09:13.340
+machine to run it.
+
+00:09:13.370 --> 00:09:14.540
+Two billion
+
+00:09:14.580 --> 00:09:15.540
+lines of code.
+
+00:09:16.030 --> 00:09:16.930
+How do you even get
+
+00:09:16.940 --> 00:09:17.870
+started on that?
+
+00:09:17.910 --> 00:09:18.690
+And how long would
+
+00:09:18.690 --> 00:09:19.399
+it take when you
+
+00:09:19.400 --> 00:09:20.460
+have to build this?
+
+00:09:20.570 --> 00:09:21.560
+Almost daily.
+
+00:09:21.600 --> 00:09:22.259
+This is where
+
+00:09:22.300 --> 00:09:23.060
+continuous
+
+00:09:23.079 --> 00:09:23.849
+integration
+
+00:09:23.850 --> 00:09:24.509
+comes in.
+
+00:09:27.200 --> 00:09:27.700
+Continuous
+
+00:09:27.729 --> 00:09:28.409
+integration
+
+00:09:28.439 --> 00:09:29.290
+often refers to
+
+00:09:29.290 --> 00:09:30.090
+the build stage
+
+00:09:30.110 --> 00:09:30.810
+of the software
+
+00:09:30.810 --> 00:09:31.700
+release cycle.
+
+00:09:31.780 --> 00:09:32.580
+This stage is
+
+00:09:32.600 --> 00:09:33.360
+often defined
+
+00:09:33.380 --> 00:09:34.080
+differently per
+
+00:09:34.080 --> 00:09:35.010
+company depending
+
+00:09:35.010 --> 00:09:35.490
+on what their
+
+00:09:35.500 --> 00:09:36.319
+infrastructure,
+
+00:09:36.439 --> 00:09:37.150
+their programming
+
+00:09:37.150 --> 00:09:38.150
+language, and tech
+
+00:09:38.150 --> 00:09:38.950
+stack look like.
+
+00:09:39.140 --> 00:09:39.950
+Automated tests in
+
+00:09:39.950 --> 00:09:40.800
+the pull requests
+
+00:09:40.840 --> 00:09:41.650
+run to see if it
+
+00:09:41.650 --> 00:09:42.650
+can be merged in,
+
+00:09:42.830 --> 00:09:43.680
+but other tests
+
+00:09:43.680 --> 00:09:44.860
+can be done when
+
+00:09:44.890 --> 00:09:45.720
+it is merged in
+
+00:09:45.750 --> 00:09:46.760
+as well to see if
+
+00:09:46.760 --> 00:09:47.380
+it can work on a
+
+00:09:47.380 --> 00:09:48.330
+production server.
+
+00:09:48.350 --> 00:09:49.010
+Build tools like
+
+00:09:49.020 --> 00:09:49.959
+Bazel automate
+
+00:09:49.960 --> 00:09:50.630
+the process of
+
+00:09:50.660 --> 00:09:51.610
+accepting new code
+
+00:09:51.610 --> 00:09:52.839
+into a repository.
+
+00:09:52.890 --> 00:09:53.819
+Bazel by Google
+
+00:09:53.830 --> 00:09:54.959
+was designed for
+
+00:09:54.960 --> 00:09:56.150
+this very issue.
+
+00:09:56.180 --> 00:09:57.500
+Extremely large
+
+00:09:57.500 --> 00:09:58.419
+code bases with
+
+00:09:58.709 --> 00:09:59.600
+billions of lines
+
+00:09:59.600 --> 00:10:00.680
+of code with
+
+00:10:04.420 --> 00:10:05.280
+It's optimized for
+
+00:10:05.280 --> 00:10:06.330
+large codebases by
+
+00:10:06.360 --> 00:10:07.310
+caching previous
+
+00:10:07.340 --> 00:10:08.640
+build results, so
+
+00:10:08.670 --> 00:10:09.480
+it won't rebuild
+
+00:10:09.480 --> 00:10:10.500
+the entire project
+
+00:10:10.510 --> 00:10:11.750
+if just one tiny
+
+00:10:11.750 --> 00:10:12.859
+part is modified.
+
+00:10:12.939 --> 00:10:13.870
+It utilizes all
+
+00:10:13.870 --> 00:10:14.880
+cores of a computer
+
+00:10:14.880 --> 00:10:15.750
+to distribute the
+
+00:10:15.769 --> 00:10:16.800
+build process while
+
+00:10:16.830 --> 00:10:17.809
+also distributing
+
+00:10:17.809 --> 00:10:18.629
+to many different
+
+00:10:18.629 --> 00:10:19.299
+machines.
+
+00:10:19.369 --> 00:10:19.860
+And this whole
+
+00:10:19.860 --> 00:10:20.650
+process makes it
+
+00:10:20.700 --> 00:10:21.460
+so that when you
+
+00:10:21.460 --> 00:10:22.700
+ask for a review.
+
+00:10:22.895 --> 00:10:24.325
+It builds, it tests,
+
+00:10:24.345 --> 00:10:25.655
+it accepts, and runs
+
+00:10:25.655 --> 00:10:27.195
+even more tests when
+
+00:10:27.205 --> 00:10:28.635
+it's integrated into
+
+00:10:28.635 --> 00:10:29.655
+the production code.
+
+00:10:29.705 --> 00:10:30.735
+With codebases this
+
+00:10:30.735 --> 00:10:31.655
+large, multiple
+
+00:10:31.655 --> 00:10:32.455
+supercomputers
+
+00:10:32.474 --> 00:10:33.045
+are working
+
+00:10:33.064 --> 00:10:33.805
+day and night
+
+00:10:33.814 --> 00:10:34.975
+testing, building,
+
+00:10:34.985 --> 00:10:35.825
+and integrating
+
+00:10:35.825 --> 00:10:36.564
+different versions
+
+00:10:36.564 --> 00:10:37.475
+of its codebase.
+
+00:10:37.535 --> 00:10:38.445
+When supercomputers
+
+00:10:38.485 --> 00:10:39.505
+cost salaries per
+
+00:10:39.515 --> 00:10:40.954
+hour to run, A 5
+
+00:10:40.954 --> 00:10:42.245
+percent optimization
+
+00:10:42.265 --> 00:10:43.405
+is a multi million
+
+00:10:43.405 --> 00:10:44.314
+dollar success.
+
+00:10:44.345 --> 00:10:45.475
+But after tests,
+
+00:10:45.485 --> 00:10:46.155
+builds, and
+
+00:10:46.204 --> 00:10:47.175
+integrations are
+
+00:10:47.175 --> 00:10:48.314
+successful, how
+
+00:10:48.365 --> 00:10:49.225
+do we deliver it?
+
+00:10:49.314 --> 00:10:52.635
+Continuous delivery.
+
+00:10:57.555 --> 00:10:58.355
+One wrong move
+
+00:10:58.355 --> 00:10:59.714
+can mean millions
+
+00:10:59.725 --> 00:11:00.835
+of dollars lost
+
+00:11:00.985 --> 00:11:02.035
+in downtime.
+
+00:11:02.115 --> 00:11:02.644
+We can't just
+
+00:11:02.645 --> 00:11:03.874
+click update and
+
+00:11:03.874 --> 00:11:04.784
+cross our fingers.
+
+00:11:04.885 --> 00:11:05.985
+This calls for
+
+00:11:05.985 --> 00:11:07.264
+continuous delivery.
+
+00:11:07.265 --> 00:11:07.815
+10 minutes of
+
+00:11:07.815 --> 00:11:08.475
+downtime could
+
+00:11:08.475 --> 00:11:09.415
+result in millions
+
+00:11:09.415 --> 00:11:10.175
+of dollars being
+
+00:11:10.195 --> 00:11:11.145
+lost instantly.
+
+00:11:11.465 --> 00:11:12.295
+So, we need to
+
+00:11:12.295 --> 00:11:13.115
+make sure that this
+
+00:11:13.115 --> 00:11:14.315
+doesn't ever happen.
+
+00:11:14.375 --> 00:11:15.425
+Continuous delivery
+
+00:11:15.475 --> 00:11:16.405
+comes into play.
+
+00:11:16.485 --> 00:11:17.625
+The ideology we
+
+00:11:17.625 --> 00:11:18.495
+should have is that
+
+00:11:18.515 --> 00:11:19.435
+our infrastructure
+
+00:11:19.435 --> 00:11:20.635
+that powers our
+
+00:11:20.635 --> 00:11:21.554
+application should
+
+00:11:21.565 --> 00:11:22.525
+be disposable
+
+00:11:22.545 --> 00:11:23.545
+and reproducible.
+
+00:11:23.745 --> 00:11:24.915
+Need 10 new servers?
+
+00:11:25.214 --> 00:11:25.925
+No problem.
+
+00:11:25.964 --> 00:11:26.955
+With Terraform, we
+
+00:11:26.955 --> 00:11:27.784
+just describe what
+
+00:11:27.784 --> 00:11:28.834
+we want in code.
+
+00:11:28.874 --> 00:11:29.724
+Then, server's
+
+00:11:29.725 --> 00:11:30.195
+delivered,
+
+00:11:30.285 --> 00:11:31.155
+pre configured
+
+00:11:31.155 --> 00:11:31.785
+to our exact
+
+00:11:31.785 --> 00:11:32.865
+specifications.
+
+00:11:33.075 --> 00:11:33.795
+Then you have
+
+00:11:33.795 --> 00:11:34.965
+site reliability
+
+00:11:34.985 --> 00:11:36.085
+engineers who
+
+00:11:36.085 --> 00:11:36.855
+use monitoring
+
+00:11:36.855 --> 00:11:38.005
+tools to predict
+
+00:11:38.005 --> 00:11:38.925
+when catastrophic
+
+00:11:38.965 --> 00:11:40.105
+events may occur
+
+00:11:40.105 --> 00:11:40.755
+in the future.
+
+00:11:40.785 --> 00:11:41.525
+When the code gets
+
+00:11:41.525 --> 00:11:42.645
+to its destination,
+
+00:11:42.734 --> 00:11:43.795
+we release changes
+
+00:11:43.835 --> 00:11:44.685
+bit by bit.
+
+00:11:44.795 --> 00:11:45.864
+Canary deployments
+
+00:11:45.875 --> 00:11:47.125
+first, then onto
+
+00:11:47.125 --> 00:11:48.075
+blue green once
+
+00:11:48.095 --> 00:11:48.945
+things check out.
+
+00:11:49.384 --> 00:11:50.424
+If issues arise,
+
+00:11:50.505 --> 00:11:51.605
+we halt and roll
+
+00:11:51.605 --> 00:11:52.554
+back immediately.
+
+00:11:52.624 --> 00:11:53.324
+This makes it
+
+00:11:53.354 --> 00:11:54.224
+as risk free
+
+00:11:54.224 --> 00:11:54.874
+as possible.
+
+00:11:55.055 --> 00:11:56.325
+Then all new changes
+
+00:11:56.335 --> 00:11:57.745
+are released and our
+
+00:11:57.745 --> 00:11:58.775
+users start to see
+
+00:11:58.815 --> 00:11:59.955
+the new features or.
+
+00:12:00.135 --> 00:12:00.805
+bug fixes.
+
+00:12:00.855 --> 00:12:01.605
+For them, it
+
+00:12:01.605 --> 00:12:02.365
+was just a nice
+
+00:12:02.365 --> 00:12:03.045
+little upgrade.
+
+00:12:03.105 --> 00:12:04.365
+For us, this was
+
+00:12:04.385 --> 00:12:05.475
+a multi million
+
+00:12:05.475 --> 00:12:06.545
+dollar operation
+
+00:12:06.545 --> 00:12:07.345
+that took thousands
+
+00:12:07.345 --> 00:12:08.195
+of engineers
+
+00:12:08.225 --> 00:12:09.595
+hours and hours of
+
+00:12:09.614 --> 00:12:10.465
+trial and error.
+
+00:12:10.515 --> 00:12:11.615
+Congratulations,
+
+00:12:11.705 --> 00:12:12.494
+your users have
+
+00:12:12.495 --> 00:12:13.055
+tried out your
+
+00:12:13.055 --> 00:12:14.485
+feature and already
+
+00:12:14.485 --> 00:12:15.045
+have something to
+
+00:12:15.045 --> 00:12:15.725
+complain about.
+
+00:12:15.755 --> 00:12:16.584
+But you did it.
+
+00:12:16.655 --> 00:12:17.175
+You deployed
+
+00:12:17.175 --> 00:12:17.895
+a feature that
+
+00:12:17.905 --> 00:12:19.435
+hundreds of millions
+
+00:12:19.455 --> 00:12:20.705
+of users are going
+
+00:12:20.705 --> 00:12:21.785
+to be using daily.
+
+00:12:21.855 --> 00:12:22.395
+Before you can
+
+00:12:22.395 --> 00:12:23.345
+celebrate, you
+
+00:12:23.345 --> 00:12:23.845
+get another
+
+00:12:23.845 --> 00:12:24.675
+feature request
+
+00:12:24.885 --> 00:12:25.795
+and a bug fix.
+
+00:12:25.855 --> 00:12:27.384
+So you open up your
+
+00:12:27.385 --> 00:12:28.525
+code editor and get
+
+00:12:28.525 --> 00:12:29.225
+right back to it.
+
+00:12:30.355 --> 00:12:32.895
+Whenever you find
+
+00:12:32.895 --> 00:12:33.594
+a silly little
+
+00:12:33.604 --> 00:12:34.704
+bug, oftentimes
+
+00:12:34.704 --> 00:12:35.655
+you think, why
+
+00:12:35.655 --> 00:12:36.255
+can't you just
+
+00:12:36.314 --> 00:12:37.305
+quickly fix this
+
+00:12:37.385 --> 00:12:38.365
+small little bug?
+
+00:12:38.405 --> 00:12:39.084
+When I was working
+
+00:12:39.084 --> 00:12:40.045
+on small projects,
+
+00:12:40.074 --> 00:12:41.004
+sometimes it was
+
+00:12:41.005 --> 00:12:41.834
+as easy as just
+
+00:12:41.925 --> 00:12:42.875
+deploying it within
+
+00:12:42.875 --> 00:12:43.615
+the next hour.
+
+00:12:43.675 --> 00:12:44.314
+But it's easy
+
+00:12:44.314 --> 00:12:44.974
+to understand
+
+00:12:44.974 --> 00:12:45.745
+why things take
+
+00:12:45.745 --> 00:12:46.574
+so long to get
+
+00:12:46.574 --> 00:12:47.384
+into production.
+
+00:12:47.464 --> 00:12:48.334
+As soon as you open
+
+00:12:48.334 --> 00:12:49.175
+up the code editor,
+
+00:12:49.185 --> 00:12:50.154
+it has to stop in
+
+00:12:50.194 --> 00:12:51.194
+a dozen locations
+
+00:12:51.194 --> 00:12:52.084
+before it's even
+
+00:12:52.084 --> 00:12:53.185
+deemed eligible to
+
+00:12:53.185 --> 00:12:54.074
+go into production.
+
+00:12:54.265 --> 00:12:55.084
+So, large tech
+
+00:12:55.094 --> 00:12:56.405
+hires thousands of
+
+00:12:56.405 --> 00:12:57.375
+software engineers
+
+00:12:57.435 --> 00:12:58.084
+to help fix
+
+00:12:58.084 --> 00:12:58.915
+these problems.
+
+00:12:59.265 --> 00:13:00.215
+But then more
+
+00:13:00.215 --> 00:13:01.725
+problems arise when
+
+00:13:01.725 --> 00:13:02.555
+you have thousands
+
+00:13:02.555 --> 00:13:03.075
+of software
+
+00:13:03.075 --> 00:13:03.975
+engineers, which
+
+00:13:03.995 --> 00:13:04.715
+creates a brand
+
+00:13:04.715 --> 00:13:05.805
+new type of market
+
+00:13:05.815 --> 00:13:06.675
+specifically for
+
+00:13:06.675 --> 00:13:08.215
+software to help
+
+00:13:08.385 --> 00:13:09.474
+developers scale
+
+00:13:09.475 --> 00:13:10.315
+their software
+
+00:13:10.405 --> 00:13:11.224
+like graphite.
+
+00:13:11.285 --> 00:13:11.825
+If you like this
+
+00:13:11.834 --> 00:13:12.535
+video, make sure
+
+00:13:12.535 --> 00:13:12.895
+you check out
+
+00:13:12.914 --> 00:13:13.605
+the video where I
+
+00:13:13.615 --> 00:13:14.935
+show how discord
+
+00:13:15.275 --> 00:13:16.355
+stores trillions
+
+00:13:16.365 --> 00:13:16.965
+of messages.
+
+00:13:17.689 --> 00:13:18.370
+Pretty insane.
+
+00:13:18.460 --> 00:13:19.340
+And every software
+
+00:13:19.360 --> 00:13:20.090
+has a different
+
+00:13:20.090 --> 00:13:20.750
+solution.
+
+00:13:20.900 --> 00:13:21.780
+In this video I took
+
+00:13:21.780 --> 00:13:22.900
+a lot of inspiration
+
+00:13:22.900 --> 00:13:23.610
+from how Google
+
+00:13:23.610 --> 00:13:24.250
+structures their
+
+00:13:24.250 --> 00:13:25.210
+massive code base
+
+00:13:25.540 --> 00:13:26.310
+as well as how
+
+00:13:26.319 --> 00:13:27.359
+Microsoft handles
+
+00:13:27.360 --> 00:13:28.279
+the version control
+
+00:13:28.290 --> 00:13:28.920
+of the Windows
+
+00:13:28.939 --> 00:13:29.890
+operating system.
+
