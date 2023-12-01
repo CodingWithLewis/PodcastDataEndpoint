@@ -8,6 +8,10 @@ RUN curl -sSL https://sdk.cloud.google.com | bash
 COPY requirements.txt .
 
 # Install dependencies.
+
+#Upgrade Pip
+RUN pip3 install --upgrade pip
+
 RUN pip3 install --prefer-binary --no-cache-dir --upgrade -r requirements.txt
 
 

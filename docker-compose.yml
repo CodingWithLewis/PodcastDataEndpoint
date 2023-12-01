@@ -10,3 +10,10 @@ services:
       - .:/app
     env_file:
       - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: json-file
+      options:
+        mode: non-blocking
+        max-buffer-size: 4m
