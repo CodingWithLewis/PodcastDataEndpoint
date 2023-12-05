@@ -8,7 +8,7 @@ from utils.database import create_table, check_if_exists, query_astra
 from utils.youtube import download_subtitles
 
 
-app = FastAPI(debug=True)
+app = FastAPI()
 
 
 @app.post("/")
